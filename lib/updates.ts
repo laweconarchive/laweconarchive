@@ -7,6 +7,18 @@ export type UpdateEntry = {
 
 export const UPDATE_ENTRIES: UpdateEntry[] = [
   {
+    date: "2026-08-11",
+    title: "Research Weekly Issue 003 published",
+    summary:
+      "The weekly research feed now covers six NBER working papers released on 10 August on political selection, union support, European firm scale, AI liability, housing taxation, and econometric coding.",
+    items: [
+      "Advanced the report to Issue 003, published 11 August 2026, and scheduled the next update for 17 August at 08:00 China Standard Time.",
+      "Marked the review period as an expanded 29 July–10 August window because the scheduled 3 August issue was not published.",
+      "Verified titles, authors, working-paper numbers, DOIs, and the 10 August publication date against NBER's weekly feed and official paper-page citation metadata.",
+      "Added research questions, methods and data, principal findings or theoretical contributions, interpretive cautions, a methods overview, and a research watchlist for all six papers."
+    ]
+  },
+  {
     date: "2026-07-28",
     title: "Stanford cardinal theme and homepage institutions introduced",
     summary:
