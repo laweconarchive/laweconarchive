@@ -29,158 +29,158 @@ export type WeeklyReportIssue = {
 };
 
 export const WEEKLY_REPORT: WeeklyReportIssue = {
-  issue: "Issue 003",
-  publishedAt: "11 August 2026",
-  period: "Expanded review window: 29 July–10 August 2026",
-  headline: "Six new papers on political selection, union support, European firm scale, AI liability, housing taxation, and empirical coding",
+  issue: "Issue 004",
+  publishedAt: "17 August 2026",
+  period: "Review window: 11–17 August 2026",
+  headline: "Six new papers on creditor rights, bank supervision, offshoring, common ownership, legal institutions, and systemic risk",
   editorialNote:
     "Research Weekly is a discovery feed for newly released law-and-economics scholarship. Each entry identifies the publication status, source date, research question, method, principal contribution, and an interpretive caution before linking to the primary repository record.",
   coverageNote:
-    "Because the scheduled 3 August issue was not published, this edition explicitly expands the review window beyond seven days to cover 29 July–10 August 2026. The six papers below appear in NBER's 10 August 2026 weekly release; their official pages and citation metadata identify the papers, authors, working-paper numbers, DOIs, and publication date.",
+    "This edition covers six CEPR Discussion Papers published from 11 through 17 August 2026. Each date, title, author list, paper number, method description, and result summary was checked against the paper's official CEPR record. The review window was not expanded.",
   latestResearch: [
     {
-      title: "Fortunate Sons: Elite Political Selection in American History",
-      authors: "James J. Feigenbaum, Andrew B. Hall, Daniel M. Thompson, and Jesse Yoder",
-      releaseDate: "10 August 2026",
-      publicationStatus: "NBER Working Paper 35569 · DOI 10.3386/w35569",
-      field: "Political economy · Institutional selection",
-      sourceLabel: "NBER",
-      sourceHref: "https://www.nber.org/papers/w35569",
+      title: "Credit Cycles and Creditor Rights",
+      authors: "Martin Kornejew, Shohini Kundu, and Karsten Müller",
+      releaseDate: "17 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21848",
+      field: "Creditor rights · Credit cycles",
+      sourceLabel: "CEPR",
+      sourceHref: "https://cepr.org/publications/dp21848",
       researchQuestion:
-        "How economically selected have members of the U.S. Congress been across historical cohorts, and did major Progressive-Era electoral reforms change who reached office?",
+        "Do stronger creditor rights amplify credit-cycle losses by accelerating enforcement, or dampen them by reallocating credit toward more productive firms?",
       method:
-        "The authors link members of Congress born from 1830 to 1950, their parents, and their brothers to complete-count censuses, then study women's suffrage, the secret ballot, direct primaries, and direct senatorial elections in triple-difference designs.",
+        "The paper combines a panel of 39 countries from 1978–2019 with firm-level evidence around Delaware's adoption of antirecharacterization laws.",
       contribution:
-        "Future legislators consistently came from unusually advantaged families, and roughly half of their adult socioeconomic premium was shared with brothers. The four reforms produced no detectable shift in the socioeconomic profile of congressional entrants.",
+        "Credit expansions under stronger creditor protection are followed by smaller output losses, fewer non-performing loans, and more credit reallocation away from unproductive sectors. In the Delaware setting, protected creditors cut credit to low-productivity firms while easing constraints for productive firms.",
       caveat:
-        "Census linkages and historical occupation or wealth measures do not capture every dimension of elite selection. A null estimate for the four reforms does not establish that electoral institutions never affect candidate entry or representation.",
-      tags: ["Political selection", "Historical census", "Triple difference", "Institutions"]
+        "The cross-country component is not by itself a causal design, and the Delaware reform evidence may not generalize to every insolvency or secured-credit regime.",
+      tags: ["Creditor rights", "Credit booms", "Capital allocation", "Delaware"]
     },
     {
-      title: "Winning is Contagious: Social Learning and the Dynamics of Union Support",
-      authors: "Ellora Derenoncourt, Arindrajit Dube, Suresh Naidu, Heather Sarsons, and Niharika Singh",
-      releaseDate: "10 August 2026",
-      publicationStatus: "NBER Working Paper 35571 · DOI 10.3386/w35571",
-      field: "Labor law · Collective action",
-      sourceLabel: "NBER",
-      sourceHref: "https://www.nber.org/papers/w35571",
+      title: "Subordinates in Charge: Does Delegation Improve Bank Supervision?",
+      authors: "Wouter Dessein, Di Gong, Thomas Lambert, and Wolf Wagner",
+      releaseDate: "16 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21846",
+      field: "Bank regulation · Organizational design",
+      sourceLabel: "CEPR",
+      sourceHref: "https://cepr.org/publications/dp21846",
       researchQuestion:
-        "Can information about nearby union victories generate further support for unionization through social learning?",
+        "Can delegating supervisory authority to a lower organizational level reduce information loss and improve detection of banking misconduct?",
       method:
-        "Union-election records from 1961–2025 are combined with close-election comparisons and a randomized information experiment involving 9,000 low-wage workers.",
+        "A model of bias and information loss in supervisory communication is paired with evidence from a reform that delegated decisions over a subset of bank branches.",
       contribution:
-        "Close union wins predict subsequent wins within the same state-industry, while experimental information about recent victories raises union support and perceived coworker support, especially where baseline information is weak.",
+        "Affected branches became 57–80% more likely to face supervisory intervention. The authors interpret the increase as improved misconduct detection and severity assessment, and report evidence inconsistent with greater general stringency or greater bank risk-taking.",
       caveat:
-        "The experiment measures support and beliefs rather than completed organizing drives. Spillovers around close elections require the identifying assumptions of the underlying design and may vary across legal and industrial-relations regimes.",
-      tags: ["Unions", "Social learning", "Close elections", "Information experiment"]
+        "An intervention is not identical to a final adjudication of misconduct, and the magnitude depends on the institutional setting and scope of this delegation reform.",
+      tags: ["Bank supervision", "Delegation", "Fraud detection", "Information loss"]
     },
     {
-      title: "The Value Gap: Europe Cannot Scale",
-      authors: "Bo Becker, Efraim Benmelech, and Joao Monteiro",
-      releaseDate: "10 August 2026",
-      publicationStatus: "NBER Working Paper 35577 · DOI 10.3386/w35577",
-      field: "Corporate finance · European capital markets",
-      sourceLabel: "NBER",
-      sourceHref: "https://www.nber.org/papers/w35577",
+      title: "Offshoring and Voting Patterns in the US",
+      authors: "Anna Maria Mayda, Lindsay Oldenski, and Walter Steingress",
+      releaseDate: "14 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21844",
+      field: "Political economy · International production",
+      sourceLabel: "CEPR",
+      sourceHref: "https://cepr.org/publications/dp21844",
       researchQuestion:
-        "Why did the aggregate market-value gap between U.S.-listed and European-listed firms widen so sharply after 2008?",
+        "How is offshoring by U.S. multinational firms associated with voting for incumbent-party candidates across counties with different workforce characteristics?",
       method:
-        "The paper compares listed-firm values from 2008–2023 across countries and sectors, then relates the gap to research intensity, returns to scale, home-market size, cost of capital, and access to equity, debt, and venture financing.",
+        "County-level presidential, House, and Senate voting data are combined with industry-level offshoring measures from 2000–2020, focusing on foreign-affiliate employment in vertically oriented industries.",
       contribution:
-        "The gap is broad-based and reflects firm value rather than listing counts. It is larger where scale and research intensity matter, while smaller European firms face especially large financing disadvantages and remain tied to home-country market size.",
+        "Greater offshoring is associated with higher incumbent vote shares in counties with more college-educated workers and lower shares in counties with more manufacturing or more easily relocated occupations, matching heterogeneous employment effects.",
       caveat:
-        "The evidence identifies a collection of financial and product-market frictions but does not by itself isolate one causal legal or regulatory mechanism. Market-value comparisons are also sensitive to sector composition and valuation conditions.",
-      tags: ["Firm scale", "Capital markets", "Cost of capital", "Europe"]
+        "The heterogeneity is consistent with a labor-market channel, but it does not establish that every voter responds through personal offshoring exposure rather than correlated local conditions.",
+      tags: ["Offshoring", "Voting", "Local labor markets", "Political economy"]
     },
     {
-      title: "Staged Access and Liability for Dual-Use Artificial Intelligence",
-      authors: "Joshua S. Gans",
-      releaseDate: "10 August 2026",
-      publicationStatus: "NBER Working Paper 35586 · DOI 10.3386/w35586",
-      field: "AI governance · Liability",
-      sourceLabel: "NBER",
-      sourceHref: "https://www.nber.org/papers/w35586",
+      title: "Common Ownership and Collusion",
+      authors: "Vincent Abraham, Florian Ederer, and Catarina Marvão",
+      releaseDate: "11 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21841",
+      field: "Competition policy · Corporate ownership",
+      sourceLabel: "CEPR",
+      sourceHref: "https://cepr.org/publications/dp21841",
       researchQuestion:
-        "How should regulators combine temporary exclusive access to dual-use AI models, developer liability, and release-timing mandates?",
+        "Can common ownership facilitate explicit collusion, and how is a firm's internalization of a rival's profits related to cartel entry and durability?",
       method:
-        "A formal model places a defender and an adversary in parallel searches for software flaws and compares post-release liability with staged access before public release.",
+        "Hand-collected ownership data are linked to the universe of registered legal cartels in Sweden, with firm-pair profit weights measuring how much one firm internalizes a rival's profits.",
       contribution:
-        "Staged access and liability are complements because exclusivity removes the adversary's strategic response to stronger defensive search. Efficient liability may remain below full harm internalization, and a separate timing mandate may still be needed.",
+        "Higher profit weights are associated with cartel participation, predict future participation, and correspond to longer cartel duration. The relation is concentrated where the internalizing firm colludes and the rival does not, indicating an asymmetric complement-substitute pattern.",
       caveat:
-        "This is a theoretical mechanism result. Its regulatory implications depend on how well actual flaw discovery, adversary response, developer effort, and harm can be observed and mapped to the model.",
-      tags: ["Dual-use AI", "Developer liability", "Staged release", "Formal model"]
+        "The legal-cartel setting avoids selection based only on detected illegal cartels, but its transparency and historical institutions may limit generalization to secret cartels or current ownership structures.",
+      tags: ["Common ownership", "Cartels", "Competition policy", "Sweden"]
     },
     {
-      title: "Property Taxes and Housing Allocation Under Financial Constraints",
-      authors: "Joshua Coven, Sebastian Golder, Arpit Gupta, and Abdoulaye Ndiaye",
-      releaseDate: "10 August 2026",
-      publicationStatus: "NBER Working Paper 35587 · DOI 10.3386/w35587",
-      field: "Property tax · Housing law and finance",
-      sourceLabel: "NBER",
-      sourceHref: "https://www.nber.org/papers/w35587",
+      title: "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
+      authors: "Jiri Schwarz, Tomas Havranek, Zuzana Irsova, and Jiri Novak",
+      releaseDate: "11 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21840",
+      field: "Legal institutions · Asset pricing",
+      sourceLabel: "CEPR",
+      sourceHref: "https://cepr.org/publications/dp21840",
       researchQuestion:
-        "How do recurrent property taxes and stepped-up tax basis affect intergenerational housing allocation when younger buyers face down-payment constraints?",
+        "Can cross-country differences in generalized trust and rule of law explain why reported estimates of the small-firm return premium vary so widely?",
       method:
-        "An overlapping-generations model separates the price-capitalization and owner holding-cost channels and evaluates counterfactual California property-tax and basis rules.",
+        "The authors synthesize 1,613 size-slope estimates from 105 studies across 31 countries using meta-regressions and Bayesian model averaging over alternative control sets.",
       contribution:
-        "Higher recurrent property taxes can lower prices and required down payments for constrained young buyers while raising holding costs for older owners; removing step-up basis also reduces modeled elderly homeownership.",
+        "Rule of law provides the more stable institutional association: stronger rule of law corresponds to more negative reported size slopes and thus larger conventional size premia. The trust association is conditional and less precisely estimated.",
       caveat:
-        "The reported reallocations are model-based counterfactuals, not direct estimates of a completed reform. Welfare assessment must also account for revenue use, liquidity burdens, mobility, and distribution within age groups.",
-      tags: ["Property tax", "Housing lock-in", "Down payments", "Overlapping generations"]
+        "The study organizes heterogeneity in reported estimates; it does not identify causal effects of trust or legal institutions on asset returns.",
+      tags: ["Rule of law", "Trust", "Size premium", "Meta-analysis"]
     },
     {
-      title: "AI Agents and Prompt Engineering in Econometric Coding",
-      authors: "Sebastian Galiani, Federico Ariel López, and Raul A. Sosa",
-      releaseDate: "10 August 2026",
-      publicationStatus: "NBER Working Paper 35588 · DOI 10.3386/w35588",
-      field: "Research methods · Reproducible econometrics",
-      sourceLabel: "NBER",
-      sourceHref: "https://www.nber.org/papers/w35588",
+      title: "The Evolving Nexus: Sovereigns, Banks and NBFIs",
+      authors: "Stefan Avdjiev, Bryan Hardy, and Maximilian Jager",
+      releaseDate: "11 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21839",
+      field: "Financial regulation · Systemic risk",
+      sourceLabel: "CEPR",
+      sourceHref: "https://cepr.org/publications/dp21839",
       researchQuestion:
-        "How do statistical software, prompting strategy, and agentic execution affect the reliability and cost of AI-generated econometric code?",
+        "Has the traditional sovereign-bank risk nexus expanded to include non-bank financial institutions as their sovereign-bond footprint has grown?",
       method:
-        "A benchmark of applied econometric and statistical tasks compares Stata, R, and Python; zero-shot and few-shot prompts; and a single-script chatbot with an agent that executes and revises code.",
+        "The paper studies risk transmission with European bank-level data and global country-level data on sovereigns, banks, and non-bank financial institutions.",
       contribution:
-        "For the tested systems, moving from chatbot to constrained agent raises task success from 74% to 96% at modest additional run cost, while few-shot prompting helps chatbots more than agents and software gaps narrow under agentic execution.",
+        "Direct sovereign exposures have recently become less important for bank-sovereign risk co-movement, while banks' NBFI exposures have become significant. NBFIs' sovereign holdings also increasingly track NBFI-sovereign risk co-movement.",
       caveat:
-        "Results are benchmark- and model-version-specific and do not establish validity on confidential, messy, or substantively misspecified research projects. Successful execution is not a substitute for design review and result verification.",
-      tags: ["Econometric coding", "AI agents", "Benchmarking", "Reproducibility"]
+        "Co-movement evidence identifies relevant exposure channels but does not establish that every exposure is causal or isolate the effect of a specific legal rule.",
+      tags: ["Sovereign risk", "Banks", "NBFIs", "Financial stability"]
     }
   ],
   methodsInIssue: [
     {
-      label: "Linked historical census analysis",
-      description: "Used with family linkages and triple differences to study long-run elite political selection and institutional reform."
+      label: "Cross-country panel plus legal reform evidence",
+      description: "Combines macro credit cycles with firm-level responses to Delaware creditor-protection reform."
     },
     {
-      label: "Close-election design plus information experiment",
-      description: "Used to connect union victories with later organizing outcomes and separately test social-learning mechanisms."
+      label: "Organizational model plus supervisory reform",
+      description: "Connects communication frictions inside a regulator to changes in delegated intervention authority."
     },
     {
-      label: "Cross-market firm comparison",
-      description: "Used to map the U.S.–Europe valuation gap across sectors, firm sizes, home markets, and financing conditions."
+      label: "Linked political-economy panel",
+      description: "Combines county voting, workforce composition, and industry offshoring over two decades."
     },
     {
-      label: "Formal regulatory and overlapping-generations models",
-      description: "Used to study AI release rules and the intergenerational housing effects of property-tax design."
+      label: "Ownership-cartel linkage",
+      description: "Matches firm-pair profit weights to a complete registry of legal cartels rather than detected illegal cartels alone."
     },
     {
-      label: "Executable econometric benchmark",
-      description: "Used to compare software, prompting, and agentic code revision on a common set of applied statistical tasks."
+      label: "Meta-analysis and financial-network evidence",
+      description: "Uses cross-study synthesis for legal institutions and multi-level exposure data for sovereign-bank-NBFI risk."
     }
   ],
   watchlist: [
-    "Which candidate-selection institutions, beyond the four Progressive-Era reforms studied, measurably broaden access to legislative office.",
-    "Whether information about union victories changes completed organizing, employer response, bargaining coverage, or durable worker beliefs.",
-    "Which specific legal, capital-market, and product-market frictions causally explain Europe's firm-scale gap.",
-    "How observable proxies for defensive effort, adversary response, and release risk could support administrable AI liability and timing rules.",
-    "Whether property-tax reform can reduce housing lock-in without creating severe liquidity burdens for cash-poor owners.",
-    "How AI coding benchmarks perform when research designs are ambiguous, data are messy, and replication requires substantive judgment."
+    "Which components of creditor-protection law drive productive reallocation without imposing excessive liquidation or renegotiation costs.",
+    "Whether supervisory delegation improves final enforcement accuracy, deterrence, and bank outcomes beyond intervention rates.",
+    "How local adjustment policy changes the electoral consequences of offshoring across worker groups and regions.",
+    "Whether common-ownership measures predict tacit or illegal collusion in settings without a complete cartel registry.",
+    "Why stronger rule of law is associated with a larger reported size premium and which mechanisms survive causal designs.",
+    "Which disclosure, liquidity, and prudential rules best address the expanding sovereign-bank-NBFI nexus."
   ]
 };
 
 export const WEEKLY_REPORT_SCHEDULE = {
   label: "Every Monday · 08:00",
   timezone: "China Standard Time (UTC+8)",
-  nextUpdate: "17 August 2026 · 08:00"
+  nextUpdate: "24 August 2026 · 08:00"
 };
