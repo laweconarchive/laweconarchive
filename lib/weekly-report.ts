@@ -29,158 +29,164 @@ export type WeeklyReportIssue = {
 };
 
 export const WEEKLY_REPORT: WeeklyReportIssue = {
-  issue: "Issue 004",
-  publishedAt: "17 August 2026",
-  period: "Review window: 11–17 August 2026",
-  headline: "Six new papers on creditor rights, bank supervision, offshoring, common ownership, legal institutions, and systemic risk",
+  issue: "Issue 005",
+  publishedAt: "24 August 2026",
+  period: "Review window: 18–24 August 2026",
+  headline:
+    "Six new papers on automation, internal labor markets, digital news, energy reliability, paternity leave, and financial literacy",
   editorialNote:
     "Research Weekly is a discovery feed for newly released law-and-economics scholarship. Each entry identifies the publication status, source date, research question, method, principal contribution, and an interpretive caution before linking to the primary repository record.",
   coverageNote:
-    "This edition covers six CEPR Discussion Papers published from 11 through 17 August 2026. Each date, title, author list, paper number, method description, and result summary was checked against the paper's official CEPR record. The review window was not expanded.",
+    "This edition covers six CEPR Discussion Papers published from 21 through 23 August 2026. Each date, title, author list, paper number, method description, and result summary was checked against the paper's official CEPR record. The standard seven-day review window was not expanded. Because all qualifying selections in this issue come from one working-paper series, readers should treat the list as a curated recent-research snapshot rather than a field-wide census.",
   latestResearch: [
     {
-      title: "Credit Cycles and Creditor Rights",
-      authors: "Martin Kornejew, Shohini Kundu, and Karsten Müller",
-      releaseDate: "17 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21848",
-      field: "Creditor rights · Credit cycles",
+      title: "Immiserizing Automation",
+      authors: "Vladimir Asriyan, Hugo Reichardt, and Sandro Shelegia",
+      releaseDate: "23 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21872",
+      field: "Automation · Human capital",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21848",
+      sourceHref: "https://cepr.org/publications/dp21872",
       researchQuestion:
-        "Do stronger creditor rights amplify credit-cycle losses by accelerating enforcement, or dampen them by reallocating credit toward more productive firms?",
+        "Can automating entry-level tasks lower long-run output by disrupting the skill accumulation embedded in career ladders?",
       method:
-        "The paper combines a panel of 39 countries from 1978–2019 with firm-level evidence around Delaware's adoption of antirecharacterization laws.",
+        "The authors build an overlapping-generations model with junior and senior tasks, then examine the model's key predictions in the context of U.S. robot automation.",
       contribution:
-        "Credit expansions under stronger creditor protection are followed by smaller output losses, fewer non-performing loans, and more credit reallocation away from unproductive sectors. In the Delaware setting, protected creditors cut credit to low-productivity firms while easing constraints for productive firms.",
+        "When cost savings are small, automating junior tasks can shift earnings later in life, reduce the present value of experience-intensive careers, and shrink the future supply of experienced workers enough to lower long-run output. Incumbent senior workers may nevertheless benefit.",
       caveat:
-        "The cross-country component is not by itself a causal design, and the Delaware reform evidence may not generalize to every insolvency or secured-credit regime.",
-      tags: ["Creditor rights", "Credit booms", "Capital allocation", "Delaware"]
+        "The immiserizing result is conditional on the model's career-ladder structure and the size of automation cost savings. The reported empirical evidence supports key predictions but does not establish that every form of automation has the same aggregate effect.",
+      tags: ["Automation", "Career ladders", "Human capital", "Distribution"]
     },
     {
-      title: "Subordinates in Charge: Does Delegation Improve Bank Supervision?",
-      authors: "Wouter Dessein, Di Gong, Thomas Lambert, and Wolf Wagner",
-      releaseDate: "16 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21846",
-      field: "Bank regulation · Organizational design",
+      title: "Firm Productivity and the Internal-Versus-External Hiring Decision",
+      authors: "Ricardo Alonso, Jed DeVaro, Antti Kauhanen, and Nelli Valmari",
+      releaseDate: "23 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21871",
+      field: "Organizational economics · Internal labor markets",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21846",
+      sourceHref: "https://cepr.org/publications/dp21871",
       researchQuestion:
-        "Can delegating supervisory authority to a lower organizational level reduce information loss and improve detection of banking misconduct?",
+        "Why are more productive firms more likely to fill vacancies with internal rather than external candidates?",
       method:
-        "A model of bias and information loss in supervisory communication is paired with evidence from a reform that delegated decisions over a subset of bank branches.",
+        "Finnish employer-employee matched panel data are paired with a model in which management quality affects how accurately firms screen internal candidates across applicant pools.",
       contribution:
-        "Affected branches became 57–80% more likely to face supervisory intervention. The authors interpret the increase as improved misconduct detection and severity assessment, and report evidence inconsistent with greater general stringency or greater bank risk-taking.",
+        "More productive firms hire internally more often. The proposed information mechanism also predicts higher internal hiring when applicant pools are larger, internal candidates are more educated, and managers perform better or have more education; the data support these patterns.",
       caveat:
-        "An intervention is not identical to a final adjudication of misconduct, and the magnitude depends on the institutional setting and scope of this delegation reform.",
-      tags: ["Bank supervision", "Delegation", "Fraud detection", "Information loss"]
+        "The evidence comes from Finland, and the observed productivity and management measures cannot rule out every alternative explanation for internal hiring. The screening mechanism should therefore be read as a supported interpretation rather than the only possible channel.",
+      tags: ["Internal hiring", "Productivity", "Management", "Screening"]
     },
     {
-      title: "Offshoring and Voting Patterns in the US",
-      authors: "Anna Maria Mayda, Lindsay Oldenski, and Walter Steingress",
-      releaseDate: "14 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21844",
-      field: "Political economy · International production",
+      title: "News Consumption in the Digital Age",
+      authors: "Francesco Capozza, Ingar Haaland, Christopher Roth, and Johannes Wohlfart",
+      releaseDate: "22 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21868 · Review",
+      field: "Digital platforms · Media economics",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21844",
+      sourceHref: "https://cepr.org/publications/dp21868",
       researchQuestion:
-        "How is offshoring by U.S. multinational firms associated with voting for incumbent-party candidates across counties with different workforce characteristics?",
+        "How do reader data, personalization, social-media acquisition, and generative AI reshape the supply of and demand for news and the resulting consumer-welfare trade-offs?",
       method:
-        "County-level presidential, House, and Senate voting data are combined with industry-level offshoring measures from 2000–2020, focusing on foreign-affiliate employment in vertically oriented industries.",
+        "This is a review and synthesis of research on online news markets, including personalization, targeted advertising, engagement incentives, sensationalism, and consumer demand.",
       contribution:
-        "Greater offshoring is associated with higher incumbent vote shares in counties with more college-educated workers and lower shares in counties with more manufacturing or more easily relocated occupations, matching heterogeneous employment effects.",
+        "The review organizes the digital-news problem around the alignment between platform or publisher objectives and readers' underlying preferences: cheaper production and finer personalization can improve or reduce welfare depending on that alignment.",
       caveat:
-        "The heterogeneity is consistent with a labor-market channel, but it does not establish that every voter responds through personal offshoring exposure rather than correlated local conditions.",
-      tags: ["Offshoring", "Voting", "Local labor markets", "Political economy"]
+        "This is not a new causal estimate. Its welfare conclusions are conditional, and the discussion of generative AI concerns likely future changes rather than measured effects from a completed policy intervention.",
+      tags: ["Digital news", "Personalization", "Consumer welfare", "Generative AI"]
     },
     {
-      title: "Common Ownership and Collusion",
-      authors: "Vincent Abraham, Florian Ederer, and Catarina Marvão",
-      releaseDate: "11 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21841",
-      field: "Competition policy · Corporate ownership",
+      title: "Coal Supply Chains and Electricity Reliability",
+      authors: "Imelda Imelda and Suchita Srinivasan",
+      releaseDate: "21 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21865",
+      field: "Energy regulation · Supply contracts",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21841",
+      sourceHref: "https://cepr.org/publications/dp21865",
       researchQuestion:
-        "Can common ownership facilitate explicit collusion, and how is a firm's internalization of a rival's profits related to cartel entry and durability?",
+        "Can localized shocks to contracted fuel suppliers propagate through coal logistics and reduce electricity-system reliability?",
       method:
-        "Hand-collected ownership data are linked to the universe of registered legal cartels in Sweden, with firm-pair profit weights measuring how much one firm internalizes a rival's profits.",
+        "The study links South African power plants to contracted coal mines from 2015–2024, combining plant operations, mining-firm revenue, and route-level traffic sensors and exploiting within-plant variation in supplier-mine rainfall.",
       contribution:
-        "Higher profit weights are associated with cartel participation, predict future participation, and correspond to longer cartel duration. The relation is concentrated where the internalizing firm colludes and the rival does not, indicating an asymmetric complement-substitute pattern.",
+        "Rainfall shocks reduce mine output, coal deliveries, and plant availability, and the disruptions propagate to rolling blackouts. The findings place the resilience of supply contracts and logistics alongside generating-plant resilience in electricity-security analysis.",
       caveat:
-        "The legal-cartel setting avoids selection based only on detected illegal cartels, but its transparency and historical institutions may limit generalization to secret cartels or current ownership structures.",
-      tags: ["Common ownership", "Cartels", "Competition policy", "Sweden"]
+        "The design is tied to South Africa's coal system and its rainfall exposure. It establishes a supply-chain reliability channel but does not identify which contractual or regulatory reform would be optimal or whether the magnitude carries to other grids and fuels.",
+      tags: ["Energy regulation", "Supply contracts", "Electricity reliability", "South Africa"]
     },
     {
-      title: "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
-      authors: "Jiri Schwarz, Tomas Havranek, Zuzana Irsova, and Jiri Novak",
-      releaseDate: "11 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21840",
-      field: "Legal institutions · Asset pricing",
+      title: "Changing Gender Norms across Generations: Evidence from a Paternity Leave Reform",
+      authors: "Lidia Farré, Christina Felfe, Libertad Gonzalez, and Patrick Schneider",
+      releaseDate: "21 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21863",
+      field: "Family policy · Gender norms",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21840",
+      sourceHref: "https://cepr.org/publications/dp21863",
       researchQuestion:
-        "Can cross-country differences in generalized trust and rule of law explain why reported estimates of the small-firm return premium vary so widely?",
+        "Can a non-transferable paid-paternity-leave entitlement change the gender attitudes and behavior of the next generation?",
       method:
-        "The authors synthesize 1,613 size-slope estimates from 105 studies across 31 countries using meta-regressions and Bayesian model averaging over alternative control sets.",
+        "The authors use Spain's 2007 introduction of 13 days of paid paternity leave, original surveys of adolescents, and a within-school difference-in-differences design comparing children born just before and after the eligibility cutoff while using adjacent cohorts as controls.",
       contribution:
-        "Rule of law provides the more stable institutional association: stronger rule of law corresponds to more negative reported size slopes and thus larger conventional size premia. The trust association is conditional and less precisely estimated.",
+        "Children exposed to leave eligibility report more egalitarian attitudes in early adolescence, undertake more counter-stereotypical household chores, and express less gender-stereotypical expectations about work and family roles.",
       caveat:
-        "The study organizes heterogeneity in reported estimates; it does not identify causal effects of trust or legal institutions on asset returns.",
-      tags: ["Rule of law", "Trust", "Size premium", "Meta-analysis"]
+        "The effects largely disappear by late adolescence. The estimates concern a short Spanish leave reform and attitudinal or behavioral outcomes among children, not a demonstrated permanent change in adult labor-market outcomes.",
+      tags: ["Paternity leave", "Gender norms", "Difference-in-differences", "Spain"]
     },
     {
-      title: "The Evolving Nexus: Sovereigns, Banks and NBFIs",
-      authors: "Stefan Avdjiev, Bryan Hardy, and Maximilian Jager",
-      releaseDate: "11 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21839",
-      field: "Financial regulation · Systemic risk",
+      title: "Survival and Financial Literacy in Investment Decisions Later in Life",
+      authors: "Chiara Dal Bianco, Francesco Maura, Francesca Parodi, and Guglielmo Weber",
+      releaseDate: "21 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21862",
+      field: "Household finance · Financial capability",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21839",
+      sourceHref: "https://cepr.org/publications/dp21862",
       researchQuestion:
-        "Has the traditional sovereign-bank risk nexus expanded to include non-bank financial institutions as their sovereign-bond footprint has grown?",
+        "How do subjective survival beliefs and financial literacy jointly affect saving, risky-asset participation, and welfare later in life?",
       method:
-        "The paper studies risk transmission with European bank-level data and global country-level data on sovereigns, banks, and non-bank financial institutions.",
+        "English Longitudinal Study of Ageing data are combined with a randomized survey experiment that cross-randomizes survival- and financial-literacy interventions, independently varies participation costs, and informs a heterogeneous-agent life-cycle model.",
       contribution:
-        "Direct sovereign exposures have recently become less important for bank-sovereign risk co-movement, while banks' NBFI exposures have become significant. NBFIs' sovereign holdings also increasingly track NBFI-sovereign risk co-movement.",
+        "Financial literacy primarily drives entry into risky markets by weakening the deterrent effect of participation costs, while survival literacy complements it in portfolio allocation. In the model's revenue-neutral counterfactuals, only survival literacy produces positive welfare gains after financing costs.",
       caveat:
-        "Co-movement evidence identifies relevant exposure channels but does not establish that every exposure is causal or isolate the effect of a specific legal rule.",
-      tags: ["Sovereign risk", "Banks", "NBFIs", "Financial stability"]
+        "The welfare ranking is model-based and depends on survey-informed parameters, intervention costs, and the assumed financing design. Greater risky-asset participation should not by itself be interpreted as a universal welfare improvement.",
+      tags: ["Financial literacy", "Longevity beliefs", "Portfolio choice", "Survey experiment"]
     }
   ],
   methodsInIssue: [
     {
-      label: "Cross-country panel plus legal reform evidence",
-      description: "Combines macro credit cycles with firm-level responses to Delaware creditor-protection reform."
+      label: "Structural theory with empirical predictions",
+      description:
+        "Career-ladder and managerial-screening models connect institutional mechanisms to observable automation and hiring patterns."
     },
     {
-      label: "Organizational model plus supervisory reform",
-      description: "Connects communication frictions inside a regulator to changes in delegated intervention authority."
+      label: "Within-unit quasi-experimental variation",
+      description:
+        "Rainfall at contracted supplier mines identifies supply-chain disruptions within power plants, while a policy cutoff supports a within-school difference-in-differences design."
     },
     {
-      label: "Linked political-economy panel",
-      description: "Combines county voting, workforce composition, and industry offshoring over two decades."
+      label: "Randomized information interventions",
+      description:
+        "Cross-randomized survival- and financial-literacy treatments separate belief updating from the role of participation costs."
     },
     {
-      label: "Ownership-cartel linkage",
-      description: "Matches firm-pair profit weights to a complete registry of legal cartels rather than detected illegal cartels alone."
+      label: "Matched administrative and longitudinal data",
+      description:
+        "Employer-employee panels, power-system records, traffic sensors, and ageing-study data connect organizational choices to individual and system outcomes."
     },
     {
-      label: "Meta-analysis and financial-network evidence",
-      description: "Uses cross-study synthesis for legal institutions and multi-level exposure data for sovereign-bank-NBFI risk."
+      label: "Evidence synthesis",
+      description:
+        "A review of digital news markets distinguishes established evidence from conditional welfare implications and prospective AI effects."
     }
   ],
   watchlist: [
-    "Which components of creditor-protection law drive productive reallocation without imposing excessive liquidation or renegotiation costs.",
-    "Whether supervisory delegation improves final enforcement accuracy, deterrence, and bank outcomes beyond intervention rates.",
-    "How local adjustment policy changes the electoral consequences of offshoring across worker groups and regions.",
-    "Whether common-ownership measures predict tacit or illegal collusion in settings without a complete cartel registry.",
-    "Why stronger rule of law is associated with a larger reported size premium and which mechanisms survive causal designs.",
-    "Which disclosure, liquidity, and prudential rules best address the expanding sovereign-bank-NBFI nexus."
+    "Which labor-market and training institutions preserve entry-level skill accumulation when firms automate junior tasks.",
+    "Whether internal hiring improves match quality and worker mobility outside Finland, and how employment law or collective bargaining affects that choice.",
+    "Which transparency, competition, privacy, or platform-governance rules better align personalized news with readers' welfare.",
+    "How fuel-supply contracts, inventories, transport redundancy, and regulatory incentives should allocate electricity-reliability risk.",
+    "Whether paternity-leave-induced changes in early-adolescent norms persist into adult household and labor-market decisions under longer leave entitlements.",
+    "How financial-capability interventions perform when real participation costs, heterogeneous risk tolerance, and program financing are measured directly."
   ]
 };
 
 export const WEEKLY_REPORT_SCHEDULE = {
   label: "Every Monday · 08:00",
   timezone: "China Standard Time (UTC+8)",
-  nextUpdate: "24 August 2026 · 08:00"
+  nextUpdate: "31 August 2026 · 08:00"
 };
