@@ -29,164 +29,164 @@ export type WeeklyReportIssue = {
 };
 
 export const WEEKLY_REPORT: WeeklyReportIssue = {
-  issue: "Issue 005",
-  publishedAt: "24 August 2026",
-  period: "Review window: 18–24 August 2026",
+  issue: "Issue 006",
+  publishedAt: "31 August 2026",
+  period: "Review window: 25–31 August 2026",
   headline:
-    "Six new papers on automation, internal labor markets, digital news, energy reliability, paternity leave, and financial literacy",
+    "Six new papers on company-law transplants, private-market access, AI regulation, household beliefs, international cooperation, and environmental taxation",
   editorialNote:
     "Research Weekly is a discovery feed for newly released law-and-economics scholarship. Each entry identifies the publication status, source date, research question, method, principal contribution, and an interpretive caution before linking to the primary repository record.",
   coverageNote:
-    "This edition covers six CEPR Discussion Papers published from 21 through 23 August 2026. Each date, title, author list, paper number, method description, and result summary was checked against the paper's official CEPR record. The standard seven-day review window was not expanded. Because all qualifying selections in this issue come from one working-paper series, readers should treat the list as a curated recent-research snapshot rather than a field-wide census.",
+    "This edition covers six CEPR Discussion Papers published from 25 through 31 August 2026. Each title, author list, exact publication date, paper number, method description, and result summary was checked against the paper's official CEPR record. The standard seven-day review window was not expanded. All six selections come from one working-paper series, so the issue is a curated recent-research snapshot rather than a comprehensive census of the field.",
   latestResearch: [
     {
-      title: "Immiserizing Automation",
-      authors: "Vladimir Asriyan, Hugo Reichardt, and Sandro Shelegia",
-      releaseDate: "23 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21872",
-      field: "Automation · Human capital",
+      title: "Transplanting Company Law: Shareholder Protection in the Cape Colony",
+      authors: "Philip Fliers, John Turner, and Lloyd Maphosa",
+      releaseDate: "31 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21890",
+      field: "Company law · Legal transplants",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21872",
+      sourceHref: "https://cepr.org/publications/dp21890",
       researchQuestion:
-        "Can automating entry-level tasks lower long-run output by disrupting the skill accumulation embedded in career ladders?",
+        "How did companies use private ordering when minimally protective British company law was transplanted into the Cape Colony?",
       method:
-        "The authors build an overlapping-generations model with junior and senior tasks, then examine the model's key predictions in the context of U.S. robot automation.",
+        "The authors examine shareholder safeguards in the articles of association of Cape Colony companies formed during the decade after the Companies Act of 1892 and compare their choices with British practice.",
       contribution:
-        "When cost savings are small, automating junior tasks can shift earnings later in life, reduce the present value of experience-intensive careers, and shrink the future supply of experienced workers enough to lower long-run output. Incumbent senior workers may nevertheless benefit.",
+        "Cape companies offered more shareholder protection and adopted the statute's blueprint articles more often than British companies. Blueprint adopters had more diffuse ownership but lower survival rates, revealing a historical association between standardized safeguards, ownership dispersion, and corporate longevity.",
       caveat:
-        "The immiserizing result is conditional on the model's career-ladder structure and the size of automation cost savings. The reported empirical evidence supports key predictions but does not establish that every form of automation has the same aggregate effect.",
-      tags: ["Automation", "Career ladders", "Human capital", "Distribution"]
+        "The ownership and survival patterns are historical associations rather than causal estimates. Firms selected their own articles, and the Cape Colony's legal, market, and colonial institutions limit direct extrapolation to modern company-law transplants.",
+      tags: ["Company law", "Legal transplants", "Shareholder protection", "Private ordering"]
     },
     {
-      title: "Firm Productivity and the Internal-Versus-External Hiring Decision",
-      authors: "Ricardo Alonso, Jed DeVaro, Antti Kauhanen, and Nelli Valmari",
-      releaseDate: "23 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21871",
-      field: "Organizational economics · Internal labor markets",
+      title: "Democratizing Private Markets: Equilibrium Predictions",
+      authors: "Luboš Pástor, Robert F. Stambaugh, and Lucian Taylor",
+      releaseDate: "31 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21892",
+      field: "Securities regulation · Private markets",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21871",
+      sourceHref: "https://cepr.org/publications/dp21892",
       researchQuestion:
-        "Why are more productive firms more likely to fill vacancies with internal rather than external candidates?",
+        "What happens to retail investors and private firms when access to private markets is broadened beyond institutional investors?",
       method:
-        "Finnish employer-employee matched panel data are paired with a model in which management quality affects how accurately firms screen internal candidates across applicant pools.",
+        "The paper calibrates a production-based asset-pricing model and compares equilibria before and after retail investors gain private-market access.",
       contribution:
-        "More productive firms hire internally more often. The proposed information mechanism also predicts higher internal hiring when applicant pools are larger, internal candidates are more educated, and managers perform better or have more education; the data support these patterns.",
+        "Retail welfare rises only slightly because private markets are small, even when retail investors face no additional disadvantage. Access reform nevertheless changes private-firm ownership, lowers firms' cost of capital, supports growth, and reduces private equity's positive CAPM alpha.",
       caveat:
-        "The evidence comes from Finland, and the observed productivity and management measures cannot rule out every alternative explanation for internal hiring. The screening mechanism should therefore be read as a supported interpretation rather than the only possible channel.",
-      tags: ["Internal hiring", "Productivity", "Management", "Screening"]
+        "These are model-based equilibrium predictions, not observed effects of a completed regulatory reform. Results depend on the calibration and do not by themselves resolve disclosure, liquidity, fraud, suitability, or investor-protection concerns.",
+      tags: ["Private markets", "Retail access", "Cost of capital", "Investor protection"]
     },
     {
-      title: "News Consumption in the Digital Age",
-      authors: "Francesco Capozza, Ingar Haaland, Christopher Roth, and Johannes Wohlfart",
-      releaseDate: "22 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21868 · Review",
-      field: "Digital platforms · Media economics",
+      title: "When the Middle Class Undermines Progress: The Political Economy of AI Regulation",
+      authors: "Konstantin Sonin",
+      releaseDate: "29 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21888",
+      field: "AI governance · Political economy",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21868",
+      sourceHref: "https://cepr.org/publications/dp21888",
       researchQuestion:
-        "How do reader data, personalization, social-media acquisition, and generative AI reshape the supply of and demand for news and the resulting consumer-welfare trade-offs?",
+        "How do uncertainty, distributional exposure, and new information affect political support for AI-friendly regulation?",
       method:
-        "This is a review and synthesis of research on online news markets, including personalization, targeted advertising, engagement incentives, sensationalism, and consumer demand.",
+        "A political-economy model studies voting over AI reform, compensatory redistribution, and regulatory sandboxes when citizens face uncertain labor-market consequences.",
       contribution:
-        "The review organizes the digital-news problem around the alignment between platform or publisher objectives and readers' underlying preferences: cheaper production and finer personalization can improve or reduce welfare depending on that alignment.",
+        "The model predicts that a larger middle class can impede reform, that compensation may be most politically effective when its welfare rationale is weakest, and that information produced by regulatory sandboxes can dissolve rather than strengthen reform coalitions.",
       caveat:
-        "This is not a new causal estimate. Its welfare conclusions are conditional, and the discussion of generative AI concerns likely future changes rather than measured effects from a completed policy intervention.",
-      tags: ["Digital news", "Personalization", "Consumer welfare", "Generative AI"]
+        "The results are theoretical and conditional on the model's information and distributional structure. Political support for AI-friendly rules is not equivalent to social optimality, and the paper does not estimate the effects of an actual sandbox or compensation program.",
+      tags: ["AI regulation", "Political coalitions", "Regulatory sandboxes", "Redistribution"]
     },
     {
-      title: "Coal Supply Chains and Electricity Reliability",
-      authors: "Imelda Imelda and Suchita Srinivasan",
-      releaseDate: "21 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21865",
-      field: "Energy regulation · Supply contracts",
+      title: "Subjective Expectations of Husbands and Wives and Couples’ Decision-Making Under Uncertainty",
+      authors: "Aureo de Paula and Christine Valente",
+      releaseDate: "29 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21887",
+      field: "Household governance · Information",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21865",
+      sourceHref: "https://cepr.org/publications/dp21887",
       researchQuestion:
-        "Can localized shocks to contracted fuel suppliers propagate through coal logistics and reduce electricity-system reliability?",
+        "How much influence do each spouse's beliefs have over joint choices when husbands and wives hold different expectations about uncertain outcomes?",
       method:
-        "The study links South African power plants to contracted coal mines from 2015–2024, combining plant operations, mining-firm revenue, and route-level traffic sensors and exploiting within-plant variation in supplier-mine rainfall.",
+        "The authors develop an empirical framework that does not impose Pareto optimality when beliefs differ and apply it to couples' contraceptive choices in Nigeria.",
       contribution:
-        "Rainfall shocks reduce mine output, coal deliveries, and plant availability, and the disruptions propagate to rolling blackouts. The findings place the resilience of supply contracts and logistics alongside generating-plant resilience in electricity-security analysis.",
+        "Spouses hold different subjective expectations, and the weight attached to each spouse's beliefs varies across domains. Information interventions therefore cannot assume that targeting husbands or wives will have the same effect for every decision margin.",
       caveat:
-        "The design is tied to South Africa's coal system and its rainfall exposure. It establishes a supply-chain reliability channel but does not identify which contractual or regulatory reform would be optimal or whether the magnitude carries to other grids and fuels.",
-      tags: ["Energy regulation", "Supply contracts", "Electricity reliability", "South Africa"]
+        "The application concerns contraceptive decisions in Nigeria and does not establish a universal bargaining weight for either spouse. Policy design must also account for autonomy, rights, and implementation constraints that are not summarized by informational influence alone.",
+      tags: ["Household decisions", "Subjective beliefs", "Information interventions", "Nigeria"]
     },
     {
-      title: "Changing Gender Norms across Generations: Evidence from a Paternity Leave Reform",
-      authors: "Lidia Farré, Christina Felfe, Libertad Gonzalez, and Patrick Schneider",
-      releaseDate: "21 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21863",
-      field: "Family policy · Gender norms",
+      title: "A Deep Case for Shallow Integration",
+      authors: "John Becko and Arnaud Costinot",
+      releaseDate: "27 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21880",
+      field: "International cooperation · Externalities",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21863",
+      sourceHref: "https://cepr.org/publications/dp21880",
       researchQuestion:
-        "Can a non-transferable paid-paternity-leave entitlement change the gender attitudes and behavior of the next generation?",
+        "Can limited market-access commitments implement globally efficient policies even when countries create pecuniary and non-pecuniary cross-border externalities?",
       method:
-        "The authors use Spain's 2007 introduction of 13 days of paid paternity leave, original surveys of adolescents, and a within-school difference-in-differences design comparing children born just before and after the eligibility cutoff while using adjacent cohorts as controls.",
+        "The paper develops a general theoretical environment and proves two implementation results, first for pecuniary externalities and then for extended commitments covering non-pecuniary externalities.",
       contribution:
-        "Children exposed to leave eligibility report more egalitarian attitudes in early adolescence, undertake more counter-stereotypical household chores, and express less gender-stereotypical expectations about work and family roles.",
+        "Properly designed market-access commitments are sufficient in the model to sustain globally efficient policies. The extension treats cross-border externalities as additional goods priced at their social values, with applications to climate and geopolitical cooperation.",
       caveat:
-        "The effects largely disappear by late adolescence. The estimates concern a short Spanish leave reform and attitudinal or behavioral outcomes among children, not a demonstrated permanent change in adult labor-market outcomes.",
-      tags: ["Paternity leave", "Gender norms", "Difference-in-differences", "Spain"]
+        "The theorems establish sufficiency under the model's conditions; they do not demonstrate that governments can observe social values, negotiate complete commitments, or enforce them in practice. Institutional and distributional feasibility remain separate questions.",
+      tags: ["International cooperation", "Market access", "Externalities", "Institutional design"]
     },
     {
-      title: "Survival and Financial Literacy in Investment Decisions Later in Life",
-      authors: "Chiara Dal Bianco, Francesco Maura, Francesca Parodi, and Guglielmo Weber",
-      releaseDate: "21 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21862",
-      field: "Household finance · Financial capability",
+      title: "Differing Environmental Preferences, Fiscal Competition, and Taxation of Goods and Pollution",
+      authors: "Chiara Canta, Helmuth Cremer, and Firouz Gahvari",
+      releaseDate: "25 August 2026",
+      publicationStatus: "CEPR Discussion Paper 21879",
+      field: "Environmental regulation · Tax design",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21862",
+      sourceHref: "https://cepr.org/publications/dp21879",
       researchQuestion:
-        "How do subjective survival beliefs and financial literacy jointly affect saving, risky-asset participation, and welfare later in life?",
+        "How does trade alter corrective tax design when countries value environmental quality differently and compete over production?",
       method:
-        "English Longitudinal Study of Ageing data are combined with a randomized survey experiment that cross-randomizes survival- and financial-literacy interventions, independently varies participation costs, and informs a heterogeneous-agent life-cycle model.",
+        "A two-country model compares non-cooperative emissions and commodity taxation under autarky and free trade when one country values environmental quality and the other does not.",
       contribution:
-        "Financial literacy primarily drives entry into risky markets by weakening the deterrent effect of participation costs, while survival literacy complements it in portfolio allocation. In the model's revenue-neutral counterfactuals, only survival literacy produces positive welfare gains after financing costs.",
+        "Trade can make the environmentally concerned country subsidize the polluting good to shift production toward its cleaner firms, violating the usual targeting principle even when emissions are taxed. Above a threshold, trade reduces global emissions, while welfare effects remain asymmetric.",
       caveat:
-        "The welfare ranking is model-based and depends on survey-informed parameters, intervention costs, and the assumed financing design. Greater risky-asset participation should not by itself be interpreted as a universal welfare improvement.",
-      tags: ["Financial literacy", "Longevity beliefs", "Portfolio choice", "Survey experiment"]
+        "The result is driven by a stylized two-country model and threshold conditions involving environmental preferences and production costs. It is not a direct policy prescription without empirical calibration and analysis of trade-law, administrative, and strategic constraints.",
+      tags: ["Environmental tax", "Fiscal competition", "Trade", "Pollution"]
     }
   ],
   methodsInIssue: [
     {
-      label: "Structural theory with empirical predictions",
+      label: "Historical institutional comparison",
       description:
-        "Career-ladder and managerial-screening models connect institutional mechanisms to observable automation and hiring patterns."
+        "Company articles under a transplanted statute connect private ordering to ownership structure and corporate survival."
     },
     {
-      label: "Within-unit quasi-experimental variation",
+      label: "Calibrated equilibrium analysis",
       description:
-        "Rainfall at contracted supplier mines identifies supply-chain disruptions within power plants, while a policy cutoff supports a within-school difference-in-differences design."
+        "A production-based asset-pricing model separates small retail risk-sharing gains from larger firm-financing effects."
     },
     {
-      label: "Randomized information interventions",
+      label: "Political-economy mechanism design",
       description:
-        "Cross-randomized survival- and financial-literacy treatments separate belief updating from the role of participation costs."
+        "A voting model traces how uncertainty, compensation, and sandbox-generated information reshape regulatory coalitions."
     },
     {
-      label: "Matched administrative and longitudinal data",
+      label: "Belief-weight identification",
       description:
-        "Employer-employee panels, power-system records, traffic sensors, and ageing-study data connect organizational choices to individual and system outcomes."
+        "A new empirical framework measures the relative influence of joint decision-makers' expectations without imposing common beliefs or Pareto efficiency."
     },
     {
-      label: "Evidence synthesis",
+      label: "Implementation and corrective-tax theory",
       description:
-        "A review of digital news markets distinguishes established evidence from conditional welfare implications and prospective AI effects."
+        "Formal models characterize efficient international commitments and tax instruments under cross-border externalities and heterogeneous environmental preferences."
     }
   ],
   watchlist: [
-    "Which labor-market and training institutions preserve entry-level skill accumulation when firms automate junior tasks.",
-    "Whether internal hiring improves match quality and worker mobility outside Finland, and how employment law or collective bargaining affects that choice.",
-    "Which transparency, competition, privacy, or platform-governance rules better align personalized news with readers' welfare.",
-    "How fuel-supply contracts, inventories, transport redundancy, and regulatory incentives should allocate electricity-reliability risk.",
-    "Whether paternity-leave-induced changes in early-adolescent norms persist into adult household and labor-market decisions under longer leave entitlements.",
-    "How financial-capability interventions perform when real participation costs, heterogeneous risk tolerance, and program financing are measured directly."
+    "Whether standardized company-law defaults causally affect ownership dispersion, financing, and survival in modern legal transplants.",
+    "How disclosure, eligibility, liquidity, and suitability rules change the limited retail-welfare gains predicted from private-market access.",
+    "Which compensation and experimentation designs preserve useful learning about AI while maintaining politically and legally durable coalitions.",
+    "How household information interventions should respond to domain-specific influence while protecting individual autonomy and procedural fairness.",
+    "Whether international institutions can measure, price, monitor, and enforce the extended market-access commitments required by the theory.",
+    "When production-shifting environmental subsidies remain welfare improving after administrative costs, strategic retaliation, and trade-law constraints are included."
   ]
 };
 
 export const WEEKLY_REPORT_SCHEDULE = {
   label: "Every Monday · 08:00",
   timezone: "China Standard Time (UTC+8)",
-  nextUpdate: "31 August 2026 · 08:00"
+  nextUpdate: "7 September 2026 · 08:00"
 };
