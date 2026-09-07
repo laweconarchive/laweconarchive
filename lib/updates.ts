@@ -7,6 +7,18 @@ export type UpdateEntry = {
 
 export const UPDATE_ENTRIES: UpdateEntry[] = [
   {
+    date: "2026-09-07",
+    title: "Research Weekly Issue 007 published",
+    summary:
+      "The weekly research feed now covers six CEPR discussion papers released from 2–6 September on property-rights access, verifiable disclosure, hidden sovereign debt, political socialization, voting, and retail pricing.",
+    items: [
+      "Advanced the report to Issue 007, published 7 September 2026, and scheduled the next update for 14 September at 08:00 China Standard Time.",
+      "Kept the standard seven-day review window of 1–7 September 2026; no expanded lookback was required.",
+      "Verified titles, complete author lists, exact publication dates, discussion-paper numbers, methods, and findings against the official CEPR records.",
+      "Separated causal designs, equilibrium theory, quantitative modeling, and historical institutional evidence, with an explicit scope or interpretation caution for every entry."
+    ]
+  },
+  {
     date: "2026-08-31",
     title: "Research Weekly Issue 006 published",
     summary:

@@ -29,164 +29,169 @@ export type WeeklyReportIssue = {
 };
 
 export const WEEKLY_REPORT: WeeklyReportIssue = {
-  issue: "Issue 006",
-  publishedAt: "31 August 2026",
-  period: "Review window: 25–31 August 2026",
+  issue: "Issue 007",
+  publishedAt: "7 September 2026",
+  period: "Review window: 1–7 September 2026",
   headline:
-    "Six new papers on company-law transplants, private-market access, AI regulation, household beliefs, international cooperation, and environmental taxation",
+    "Six new papers on property-rights access, verifiable disclosure, hidden debt, political socialization, voting, and retail pricing",
   editorialNote:
     "Research Weekly is a discovery feed for newly released law-and-economics scholarship. Each entry identifies the publication status, source date, research question, method, principal contribution, and an interpretive caution before linking to the primary repository record.",
   coverageNote:
-    "This edition covers six CEPR Discussion Papers published from 25 through 31 August 2026. Each title, author list, exact publication date, paper number, method description, and result summary was checked against the paper's official CEPR record. The standard seven-day review window was not expanded. All six selections come from one working-paper series, so the issue is a curated recent-research snapshot rather than a comprehensive census of the field.",
+    "This edition covers six CEPR Discussion Papers published from 2 through 6 September 2026. Each title, author list, exact publication date, paper number, method description, and result summary was checked against the paper's official CEPR record. The standard seven-day review window of 1–7 September was not expanded. All six selections come from one working-paper series, so the issue is a curated recent-research snapshot rather than a comprehensive census of the field.",
   latestResearch: [
     {
-      title: "Transplanting Company Law: Shareholder Protection in the Cape Colony",
-      authors: "Philip Fliers, John Turner, and Lloyd Maphosa",
-      releaseDate: "31 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21890",
-      field: "Company law · Legal transplants",
+      title: "Hey, Governors, Leave Them Kids Alone: Political Influence During Childhood",
+      authors: "Gianmarco Daniele, Sergio Galletta, Marco Le Moglie, and Federico Masera",
+      releaseDate: "6 September 2026",
+      publicationStatus: "CEPR Discussion Paper 21907",
+      field: "Political economy · Institutional influence",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21890",
+      sourceHref: "https://cepr.org/publications/dp21907",
       researchQuestion:
-        "How did companies use private ordering when minimally protective British company law was transplanted into the Cape Colony?",
+        "Can exposure to a state governor during childhood durably shift adult partisan alignment and political participation?",
       method:
-        "The authors examine shareholder safeguards in the articles of association of Cape Colony companies formed during the decade after the Companies Act of 1892 and compare their choices with British practice.",
+        "The authors combine records for 200 million registered U.S. voters with a regression-discontinuity design based on close gubernatorial elections, then compare exposure by age and by governors' institutional authority and popularity.",
       contribution:
-        "Cape companies offered more shareholder protection and adopted the statute's blueprint articles more often than British companies. Blueprint adopters had more diffuse ownership but lower survival rates, revealing a historical association between standardized safeguards, ownership dispersion, and corporate longevity.",
+        "Exposure between ages 6 and 17 shifts adult party registration toward the governor's party. Each additional childhood year under a Republican governor raises Republican registration by 0.45 percentage point, with related effects on primary participation and survey attitudes and larger effects where governors hold greater authority.",
       caveat:
-        "The ownership and survival patterns are historical associations rather than causal estimates. Firms selected their own articles, and the Cape Colony's legal, market, and colonial institutions limit direct extrapolation to modern company-law transplants.",
-      tags: ["Company law", "Legal transplants", "Shareholder protection", "Private ordering"]
+        "Regression-discontinuity estimates are most credible around close elections and need not describe landslide elections or other political systems. Party registration is an observable proxy for preferences, and the institutional channels identified in U.S. states do not by themselves establish which particular policies caused the shift.",
+      tags: ["Political socialization", "Regression discontinuity", "Institutions", "Voting"]
     },
     {
-      title: "Democratizing Private Markets: Equilibrium Predictions",
-      authors: "Luboš Pástor, Robert F. Stambaugh, and Lucian Taylor",
-      releaseDate: "31 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21892",
-      field: "Securities regulation · Private markets",
+      title: "An Empirically-Grounded Theory of Voting Based on Prosocial Motives",
+      authors: "Laurent Bouton, Stefan Krasa, and Francesco Squintani",
+      releaseDate: "6 September 2026",
+      publicationStatus: "CEPR Discussion Paper 21908",
+      field: "Public choice · Voting",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21892",
+      sourceHref: "https://cepr.org/publications/dp21908",
       researchQuestion:
-        "What happens to retail investors and private firms when access to private markets is broadened beyond institutional investors?",
+        "Can prosocial motives explain observed turnout, winning margins, and comparative statics that standard costly-voting models struggle to match?",
       method:
-        "The paper calibrates a production-based asset-pricing model and compares equilibria before and after retail investors gain private-market access.",
+        "The paper builds a costly-voting model in a spatial electoral setting, establishes Nash-equilibrium existence under a finite-electorate consistency condition, derives comparative statics, and compares predictions with prior evidence and original empirical work.",
       contribution:
-        "Retail welfare rises only slightly because private markets are small, even when retail investors face no additional disadvantage. Access reform nevertheless changes private-firm ownership, lowers firms' cost of capital, supports growth, and reduces private equity's positive CAPM alpha.",
+        "A motive that depends jointly on expected participation by fellow supporters, the collective effect of those votes, and the value placed on the electoral outcome can qualitatively and quantitatively reconcile several empirical turnout regularities in one framework.",
       caveat:
-        "These are model-based equilibrium predictions, not observed effects of a completed regulatory reform. Results depend on the calibration and do not by themselves resolve disclosure, liquidity, fraud, suitability, or investor-protection concerns.",
-      tags: ["Private markets", "Retail access", "Cost of capital", "Investor protection"]
+        "Model fit does not uniquely identify prosocial motives or rule out expressive, informational, or institutional explanations. Equilibrium predictions remain conditional on the specified preference and voting-cost structure.",
+      tags: ["Public choice", "Turnout", "Prosocial motives", "Nash equilibrium"]
     },
     {
-      title: "When the Middle Class Undermines Progress: The Political Economy of AI Regulation",
-      authors: "Konstantin Sonin",
-      releaseDate: "29 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21888",
-      field: "AI governance · Political economy",
+      title: "Decomposing Cyclical Grocery Prices: Store and Household Responses",
+      authors: "Richard Friberg, Thor Andreas Aursland, Frode Steen, and Simen Ulsaker",
+      releaseDate: "6 September 2026",
+      publicationStatus: "CEPR Discussion Paper 21909",
+      field: "Industrial organization · Consumer behavior",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21888",
+      sourceHref: "https://cepr.org/publications/dp21909",
       researchQuestion:
-        "How do uncertainty, distributional exposure, and new information affect political support for AI-friendly regulation?",
+        "When local economic conditions worsen, how much of the fall in grocery prices paid comes from retailer pricing rather than changes in household shopping behavior?",
       method:
-        "A political-economy model studies voting over AI reform, compensatory redistribution, and regulatory sandboxes when citizens face uncertain labor-market consequences.",
+        "Using the 2014 oil-price collapse as a regional unemployment shock in Norway, the authors combine transaction histories for 100,000 households with weekly store-level prices and derive an exact regression decomposition of retailer and household-response channels.",
       contribution:
-        "The model predicts that a larger middle class can impede reform, that compensation may be most politically effective when its welfare rationale is weakest, and that information produced by regulatory sandboxes can dissolve rather than strengthen reform coalitions.",
+        "Prices paid are procyclical. Retailer price changes explain about one tenth of the decline, while households' timing of purchases around temporary sales accounts for more than half, showing that unit-value price indexes increasingly mix retailer pricing with consumer substitution in downturns.",
       caveat:
-        "The results are theoretical and conditional on the model's information and distributional structure. Political support for AI-friendly rules is not equivalent to social optimality, and the paper does not estimate the effects of an actual sandbox or compensation program.",
-      tags: ["AI regulation", "Political coalitions", "Regulatory sandboxes", "Redistribution"]
+        "The estimates arise from a particular Norwegian shock and grocery market. The decomposition clarifies mechanisms in prices paid, but it does not alone establish changes in household welfare or the general cost of living.",
+      tags: ["Retail pricing", "Consumer substitution", "Price indexes", "Natural experiment"]
     },
     {
-      title: "Subjective Expectations of Husbands and Wives and Couples’ Decision-Making Under Uncertainty",
-      authors: "Aureo de Paula and Christine Valente",
-      releaseDate: "29 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21887",
-      field: "Household governance · Information",
+      title: "Hidden Debt Revelations",
+      authors: "Sebastian Horn, David Mihalyi, Philipp Nickol, and Cesar Sosa-Padilla",
+      releaseDate: "3 September 2026",
+      publicationStatus: "CEPR Discussion Paper 21902",
+      field: "Sovereign finance · Fiscal transparency",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21887",
+      sourceHref: "https://cepr.org/publications/dp21902",
       researchQuestion:
-        "How much influence do each spouse's beliefs have over joint choices when husbands and wives hold different expectations about uncertain outcomes?",
+        "How large and systematic is hidden sovereign debt, when is it revealed, and how does unreliable reporting affect default risk and borrowing capacity?",
       method:
-        "The authors develop an empirical framework that does not impose Pareto optimality when beliefs differ and apply it to couples' contraceptive choices in Nigeria.",
+        "The authors assemble 119 historical vintages of League of Nations, United Nations, IMF, and World Bank debt statistics covering as many as 187 countries over more than a century, then incorporate revision patterns into a quantitative sovereign-default model.",
       contribution:
-        "Spouses hold different subjective expectations, and the weight attached to each spouse's beliefs varies across domains. Information interventions therefore cannot assume that targeting husbands or wives will have the same effect for every decision margin.",
+        "Debt is systematically revised upward by about one percent of GDP on average; hidden debt tends to accumulate in good times and emerge during IMF programs and defaults. The model attributes roughly 20% of the debt-capacity gap between low- and high-income economies to cross-country differences in data reliability.",
       caveat:
-        "The application concerns contraceptive decisions in Nigeria and does not establish a universal bargaining weight for either spouse. Policy design must also account for autonomy, rights, and implementation constraints that are not summarized by informational influence alone.",
-      tags: ["Household decisions", "Subjective beliefs", "Information interventions", "Nigeria"]
+        "Ex post revisions may reflect measurement improvements, coverage changes, or reclassification as well as strategic concealment. The reported contribution to debt intolerance is model-based and should not be read as a causal share identified from the historical data alone.",
+      tags: ["Sovereign debt", "Fiscal transparency", "Data revisions", "Default risk"]
     },
     {
-      title: "A Deep Case for Shallow Integration",
-      authors: "John Becko and Arnaud Costinot",
-      releaseDate: "27 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21880",
-      field: "International cooperation · Externalities",
+      title: "The Limits of Verifiability: Credibility and Flexibility in Communication",
+      authors: "Alessandro Lizzeri, Yichuan Lou, and Jacopo Perego",
+      releaseDate: "2 September 2026",
+      publicationStatus: "CEPR Discussion Paper 21900",
+      field: "Disclosure · Information design",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21880",
+      sourceHref: "https://cepr.org/publications/dp21900",
       researchQuestion:
-        "Can limited market-access commitments implement globally efficient policies even when countries create pecuniary and non-pecuniary cross-border externalities?",
+        "When does tying claims to verifiable evidence improve communication, and when does it prevent an informed sender from conveying useful context?",
       method:
-        "The paper develops a general theoretical environment and proves two implementation results, first for pecuniary externalities and then for extended commitments covering non-pecuniary externalities.",
+        "A sender–receiver model compares verifiable and unverifiable communication when preferences are only partially aligned and the sender's private information is richer than the evidence she can prove.",
       contribution:
-        "Properly designed market-access commitments are sufficient in the model to sustain globally efficient policies. The extension treats cross-border externalities as additional goods priced at their social values, with applications to climate and geopolitical cooperation.",
+        "Verifiability creates a credibility–flexibility trade-off: it helps when preferences are sufficiently misaligned but can hinder communication when interests are more closely aligned. Unverifiable messages can complement evidence by contextualizing observations that would otherwise mislead.",
       caveat:
-        "The theorems establish sufficiency under the model's conditions; they do not demonstrate that governments can observe social values, negotiate complete commitments, or enforce them in practice. Institutional and distributional feasibility remain separate questions.",
-      tags: ["International cooperation", "Market access", "Externalities", "Institutional design"]
+        "The thresholds and welfare comparisons are theoretical and depend on the model's evidence and preference structure. The result does not imply that legal verification requirements are generally undesirable, especially where fraud, enforcement, or third-party reliance matters.",
+      tags: ["Disclosure", "Verifiability", "Credibility", "Information design"]
     },
     {
-      title: "Differing Environmental Preferences, Fiscal Competition, and Taxation of Goods and Pollution",
-      authors: "Chiara Canta, Helmuth Cremer, and Firouz Gahvari",
-      releaseDate: "25 August 2026",
-      publicationStatus: "CEPR Discussion Paper 21879",
-      field: "Environmental regulation · Tax design",
+      title: "Financing Property Rights: Fee-Financed Registration and Unequal Formalisation in Spain, 1845–1935",
+      authors: "Juan Carmona and Joan R. Rosés",
+      releaseDate: "2 September 2026",
+      publicationStatus: "CEPR Discussion Paper 21898",
+      field: "Property law · Legal institutions",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21879",
+      sourceHref: "https://cepr.org/publications/dp21898",
       researchQuestion:
-        "How does trade alter corrective tax design when countries value environmental quality differently and compete over production?",
+        "How did user fees and transfer taxes shape access to Spain's formally universal land registry and the distributional effects of property-rights formalization?",
       method:
-        "A two-country model compares non-cooperative emissions and commodity taxation under autarky and free trade when one country values environmental quality and the other does not.",
+        "The authors reconstruct the registry's cost structure from fee schedules, fiscal series, and provincial evidence for 1845–1935 and relate the incidence of formalization costs to patterns of registry participation.",
       contribution:
-        "Trade can make the environmentally concerned country subsidize the polluting good to shift production toward its cleaner firms, violating the usual targeting principle even when emissions are taxed. Above a threshold, trade reduces global emissions, while welfare effects remain asymmetric.",
+        "Fixed notarial fees, registry charges, and taxes reduced the state's administrative burden but imposed the highest proportional cost on low-value and fragmented properties. A legally universal registry therefore remained economically unequal, and wider territorial coverage did not automatically remove exclusion created by pricing.",
       caveat:
-        "The result is driven by a stylized two-country model and threshold conditions involving environmental preferences and production costs. It is not a direct policy prescription without empirical calibration and analysis of trade-law, administrative, and strategic constraints.",
-      tags: ["Environmental tax", "Fiscal competition", "Trade", "Pollution"]
+        "The evidence establishes a historically grounded distributional mechanism rather than a modern causal estimate. Institutional capacity, cadastral quality, landholding structure, and available financing technologies differ across countries and periods.",
+      tags: ["Property rights", "Land registry", "User fees", "Distribution"]
     }
   ],
   methodsInIssue: [
     {
-      label: "Historical institutional comparison",
+      label: "Administrative-data regression discontinuity",
       description:
-        "Company articles under a transplanted statute connect private ordering to ownership structure and corporate survival."
+        "Close gubernatorial elections and 200 million voter records identify persistent political effects of childhood exposure near the electoral cutoff."
     },
     {
-      label: "Calibrated equilibrium analysis",
+      label: "Empirically disciplined equilibrium theory",
       description:
-        "A production-based asset-pricing model separates small retail risk-sharing gains from larger firm-financing effects."
+        "A costly-voting model derives equilibrium comparative statics and evaluates whether one motive structure can reproduce observed electoral patterns."
     },
     {
-      label: "Political-economy mechanism design",
+      label: "Shock-based price decomposition",
       description:
-        "A voting model traces how uncertainty, compensation, and sandbox-generated information reshape regulatory coalitions."
+        "Household transactions and store prices separate retailer adjustments from purchase timing and other consumer responses to a regional downturn."
     },
     {
-      label: "Belief-weight identification",
+      label: "Vintage reconstruction and quantitative modeling",
       description:
-        "A new empirical framework measures the relative influence of joint decision-makers' expectations without imposing common beliefs or Pareto efficiency."
+        "Successive international debt datasets reveal reporting revisions that are then disciplined through a sovereign-default model."
     },
     {
-      label: "Implementation and corrective-tax theory",
+      label: "Communication theory",
       description:
-        "Formal models characterize efficient international commitments and tax instruments under cross-border externalities and heterogeneous environmental preferences."
+        "A sender–receiver model identifies when proof requirements improve credibility and when they suppress informative flexibility."
+    },
+    {
+      label: "Historical institutional incidence",
+      description:
+        "Fee schedules, fiscal accounts, and provincial participation connect the financing of a legal institution to unequal practical access."
     }
   ],
   watchlist: [
-    "Whether standardized company-law defaults causally affect ownership dispersion, financing, and survival in modern legal transplants.",
-    "How disclosure, eligibility, liquidity, and suitability rules change the limited retail-welfare gains predicted from private-market access.",
-    "Which compensation and experimentation designs preserve useful learning about AI while maintaining politically and legally durable coalitions.",
-    "How household information interventions should respond to domain-specific influence while protecting individual autonomy and procedural fairness.",
-    "Whether international institutions can measure, price, monitor, and enforce the extended market-access commitments required by the theory.",
-    "When production-shifting environmental subsidies remain welfare improving after administrative costs, strategic retaliation, and trade-law constraints are included."
+    "Which education, budget, appointment, or agenda-setting powers transmit governors' partisan influence during childhood.",
+    "Whether prosocial-voting predictions remain distinct from expressive and informational explanations in new field evidence.",
+    "How household purchase timing changes measured inflation, distributional incidence, and competition-policy assessments across retail markets.",
+    "Which audit, disclosure, and lender-verification institutions reduce debt revisions without inducing off-balance-sheet substitution.",
+    "When legal verification rules should permit contextual statements while preserving sanctions for deception and third-party protection.",
+    "How alternative fee schedules, exemptions, or public financing can widen registry participation without weakening record quality or fiscal capacity."
   ]
 };
 
 export const WEEKLY_REPORT_SCHEDULE = {
   label: "Every Monday · 08:00",
   timezone: "China Standard Time (UTC+8)",
-  nextUpdate: "7 September 2026 · 08:00"
+  nextUpdate: "14 September 2026 · 08:00"
 };
