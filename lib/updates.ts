@@ -7,6 +7,18 @@ export type UpdateEntry = {
 
 export const UPDATE_ENTRIES: UpdateEntry[] = [
   {
+    date: "2026-09-21",
+    title: "Research Weekly Issue 008 published",
+    summary:
+      "The weekly research feed now covers six CEPR discussion papers released from 16–20 September on local public finance, transport pricing, industrial-policy politics, electricity-market design, infrastructure, and inheritance institutions.",
+    items: [
+      "Advanced the report to Issue 008, published 21 September 2026, and scheduled the next update for 28 September at 08:00 China Standard Time.",
+      "Expanded the review window to 8–21 September 2026 because the scheduled 14 September issue was not published, and disclosed the missed issue prominently rather than presenting the edition as a standard seven-day review.",
+      "Verified titles, complete author lists, exact publication dates, discussion-paper numbers, methods, and findings against the official CEPR records.",
+      "Added an explicit interpretation boundary for each causal, structural, historical, and institutional-design claim."
+    ]
+  },
+  {
     date: "2026-09-07",
     title: "Research Weekly Issue 007 published",
     summary:

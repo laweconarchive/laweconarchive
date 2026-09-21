@@ -29,169 +29,170 @@ export type WeeklyReportIssue = {
 };
 
 export const WEEKLY_REPORT: WeeklyReportIssue = {
-  issue: "Issue 007",
-  publishedAt: "7 September 2026",
-  period: "Review window: 1–7 September 2026",
+  issue: "Issue 008",
+  publishedAt: "21 September 2026",
+  period: "Expanded review window: 8–21 September 2026",
   headline:
-    "Six new papers on property-rights access, verifiable disclosure, hidden debt, political socialization, voting, and retail pricing",
+    "Six new papers on local public finance, transport pricing, industrial-policy politics, electricity-market design, infrastructure, and inheritance",
   editorialNote:
     "Research Weekly is a discovery feed for newly released law-and-economics scholarship. Each entry identifies the publication status, source date, research question, method, principal contribution, and an interpretive caution before linking to the primary repository record.",
   coverageNote:
-    "This edition covers six CEPR Discussion Papers published from 2 through 6 September 2026. Each title, author list, exact publication date, paper number, method description, and result summary was checked against the paper's official CEPR record. The standard seven-day review window of 1–7 September was not expanded. All six selections come from one working-paper series, so the issue is a curated recent-research snapshot rather than a comprehensive census of the field.",
+    "This edition covers six CEPR Discussion Papers published from 16 through 20 September 2026. The review window was expanded to 8–21 September because the scheduled 14 September issue was not published. Each title, author list, exact publication date, paper number, method description, and result summary was checked against the paper's official CEPR record. All six selections come from one working-paper series and emphasize the most recent institutionally relevant research in the expanded window; the issue is not a comprehensive census of every paper released during those fourteen days.",
   latestResearch: [
     {
-      title: "Hey, Governors, Leave Them Kids Alone: Political Influence During Childhood",
-      authors: "Gianmarco Daniele, Sergio Galletta, Marco Le Moglie, and Federico Masera",
-      releaseDate: "6 September 2026",
-      publicationStatus: "CEPR Discussion Paper 21907",
-      field: "Political economy · Institutional influence",
+      title: "Do Immigrants Impact Local Public Finances? Evidence from Belgium",
+      authors: "Anna Maria Mayda, Jerome Gonnot, and Simona Fiore",
+      releaseDate: "20 September 2026",
+      publicationStatus: "CEPR Discussion Paper 21957",
+      field: "Local public finance · Migration",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21907",
+      sourceHref: "https://cepr.org/publications/dp21957",
       researchQuestion:
-        "Can exposure to a state governor during childhood durably shift adult partisan alignment and political participation?",
+        "How does immigration affect municipal tax revenue and public spending, and do fiscal effects differ between immigrants from EU and non-EU countries?",
       method:
-        "The authors combine records for 200 million registered U.S. voters with a regression-discontinuity design based on close gubernatorial elections, then compare exposure by age and by governors' institutional authority and popularity.",
+        "The authors combine Belgian municipal administrative data on revenues and expenditures from 2005–2018 with an instrumental-variable strategy based on historical immigrant settlement patterns.",
       contribution:
-        "Exposure between ages 6 and 17 shifts adult party registration toward the governor's party. Each additional childhood year under a Republican governor raises Republican registration by 0.45 percentage point, with related effects on primary participation and survey attitudes and larger effects where governors hold greater authority.",
+        "Immigration is associated on average with lower per-capita municipal expenditure and unchanged to slightly lower revenue, but the aggregate masks substantial heterogeneity. EU immigration slightly raises revenue without a significant spending effect, whereas non-EU immigration narrows the tax base and reduces both revenue and spending, including security and social assistance; the fall in social spending is concentrated more heavily on non-European immigrants than on Belgian residents.",
       caveat:
-        "Regression-discontinuity estimates are most credible around close elections and need not describe landslide elections or other political systems. Party registration is an observable proxy for preferences, and the institutional channels identified in U.S. states do not by themselves establish which particular policies caused the shift.",
-      tags: ["Political socialization", "Regression discontinuity", "Institutions", "Voting"]
+        "The causal interpretation depends on the historical-settlement instrument affecting current municipal finances only through immigration. The estimates concern Belgian local budgets, not the full national fiscal balance or the broader economic and social effects of immigration.",
+      tags: ["Migration", "Local taxation", "Public spending", "Instrumental variables"]
     },
     {
-      title: "An Empirically-Grounded Theory of Voting Based on Prosocial Motives",
-      authors: "Laurent Bouton, Stefan Krasa, and Francesco Squintani",
-      releaseDate: "6 September 2026",
-      publicationStatus: "CEPR Discussion Paper 21908",
-      field: "Public choice · Voting",
+      title: "Pricing Cars Off the Road: E-bike Substitution and Welfare Gains from Transport Pricing",
+      authors:
+        "Jakob Roth, Laura Schwab, Beat Hintermann, Thomas Götschi, Adrian Meister, Lucas Meyer de Freitas, and Kay Axhausen",
+      releaseDate: "19 September 2026",
+      publicationStatus: "CEPR Discussion Paper 21954",
+      field: "Environmental regulation · Transport pricing",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21908",
+      sourceHref: "https://cepr.org/publications/dp21954",
       researchQuestion:
-        "Can prosocial motives explain observed turnout, winning margins, and comparative statics that standard costly-voting models struggle to match?",
+        "How strongly does Pigouvian transport pricing shift regular drivers toward cycling, and how much of the intervention's welfare gain can a per-distance driving tax reproduce?",
       method:
-        "The paper builds a costly-voting model in a spatial electoral setting, establishes Nash-equilibrium existence under a finite-electorate consistency condition, derives comparative statics, and compares predictions with prior evidence and original empirical work.",
+        "A randomized controlled trial follows 1,085 e-bike owners who also drive regularly through a GPS-based travel app. The authors then estimate a discrete-choice model to recover preference parameters and compare alternative pricing instruments.",
       contribution:
-        "A motive that depends jointly on expected participation by fellow supporters, the collective effect of those votes, and the value placed on the electoral outcome can qualitatively and quantitatively reconcile several empirical turnout regularities in one framework.",
+        "The pricing intervention reduces transport-related external costs by 7%, mainly by shifting travel from cars to e-bikes. The structural estimates imply that a volumetric tax on driving could capture 81% of the experimental intervention's welfare gains.",
       caveat:
-        "Model fit does not uniquely identify prosocial motives or rule out expressive, informational, or institutional explanations. Equilibrium predictions remain conditional on the specified preference and voting-cost structure.",
-      tags: ["Public choice", "Turnout", "Prosocial motives", "Nash equilibrium"]
+        "Participants already owned e-bikes and regularly drove, so responses may be larger than in populations without a ready substitute. The welfare comparison additionally depends on the discrete-choice specification, external-cost measures, and implementation conditions outside the trial.",
+      tags: ["Pigouvian pricing", "Randomized trial", "Transport", "Externalities"]
     },
     {
-      title: "Decomposing Cyclical Grocery Prices: Store and Household Responses",
-      authors: "Richard Friberg, Thor Andreas Aursland, Frode Steen, and Simen Ulsaker",
-      releaseDate: "6 September 2026",
-      publicationStatus: "CEPR Discussion Paper 21909",
-      field: "Industrial organization · Consumer behavior",
+      title: "The Political Foundations of Industrial Policy: Emergence, Endurance, and Exhaustion",
+      authors: "Lottie Field, Réka Juhász, and Michele Zampa",
+      releaseDate: "19 September 2026",
+      publicationStatus: "CEPR Discussion Paper 21953",
+      field: "Industrial policy · Political economy",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21909",
+      sourceHref: "https://cepr.org/publications/dp21953",
       researchQuestion:
-        "When local economic conditions worsen, how much of the fall in grocery prices paid comes from retailer pricing rather than changes in household shopping behavior?",
+        "How do political visions shape the creation, endurance, and eventual exhaustion of large state-led industrial policies?",
       method:
-        "Using the 2014 oil-price collapse as a regional unemployment shock in Norway, the authors combine transaction histories for 100,000 households with weekly store-level prices and derive an exact regression decomposition of retailer and household-response channels.",
+        "The paper compares Italy's Cassa per il Mezzogiorno and the U.S. Moonshot using historical and primary political sources, decades of newspaper coverage, topic modeling, sentiment analysis, and systematic close reading.",
       contribution:
-        "Prices paid are procyclical. Retailer price changes explain about one tenth of the decline, while households' timing of purchases around temporary sales accounts for more than half, showing that unit-value price indexes increasingly mix retailer pricing with consumer substitution in downturns.",
+        "Both programs originated in broader political projects rather than narrow economic diagnoses, and their public visions framed what counted as success, failure, and an acceptable time horizon. The Moonshot's bounded objective was fulfilled on schedule; the Cassa's open-ended vision was gradually exhausted as failures accumulated.",
       caveat:
-        "The estimates arise from a particular Norwegian shock and grocery market. The decomposition clarifies mechanisms in prices paid, but it does not alone establish changes in household welfare or the general cost of living.",
-      tags: ["Retail pricing", "Consumer substitution", "Price indexes", "Natural experiment"]
+        "Two purposively selected historical cases illuminate a mechanism but cannot establish the average causal effect of policy visions. The analysis distinguishes political endurance from economic efficiency and should not be read as a general endorsement of either program.",
+      tags: ["Industrial policy", "Political narratives", "Text analysis", "Comparative history"]
     },
     {
-      title: "Hidden Debt Revelations",
-      authors: "Sebastian Horn, David Mihalyi, Philipp Nickol, and Cesar Sosa-Padilla",
-      releaseDate: "3 September 2026",
-      publicationStatus: "CEPR Discussion Paper 21902",
-      field: "Sovereign finance · Fiscal transparency",
+      title: "A Proposal for Enabling and Operating Power Systems with High Shares of Renewable Energy",
+      authors: "Sebastian Fleitas, Igal E. Hendel, and Ramon Mendez Galain",
+      releaseDate: "18 September 2026",
+      publicationStatus: "CEPR Discussion Paper 21952",
+      field: "Energy regulation · Market design",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21902",
+      sourceHref: "https://cepr.org/publications/dp21952",
       researchQuestion:
-        "How large and systematic is hidden sovereign debt, when is it revealed, and how does unreliable reporting affect default risk and borrowing capacity?",
+        "Which regulatory and procurement institutions can support reliable, investment-compatible electricity systems when variable renewable generation becomes dominant?",
       method:
-        "The authors assemble 119 historical vintages of League of Nations, United Nations, IMF, and World Bank debt statistics covering as many as 187 countries over more than a century, then incorporate revision patterns into a quantitative sovereign-default model.",
+        "The authors develop a market-design proposal centered on an open-source system-expansion model, periodic technology-specific auctions for long-term contracts, and remuneration tied to each technology's system value, drawing on Uruguay's electricity transition as an institutional case.",
       contribution:
-        "Debt is systematically revised upward by about one percent of GDP on average; hidden debt tends to accumulate in good times and emerge during IMF programs and defaults. The model attributes roughly 20% of the debt-capacity gap between low- and high-income economies to cross-country differences in data reliability.",
+        "The framework shifts competition from short-term spot dispatch toward competition for long-term contracts while preserving market entry. Uruguay's experience—99.1% renewable penetration within a decade and roughly halved generation costs—is presented as evidence that high-renewable systems can operate with long-term procurement and limited reliance on spot markets.",
       caveat:
-        "Ex post revisions may reflect measurement improvements, coverage changes, or reclassification as well as strategic concealment. The reported contribution to debt intolerance is model-based and should not be read as a causal share identified from the historical data alone.",
-      tags: ["Sovereign debt", "Fiscal transparency", "Data revisions", "Default risk"]
+        "This is a regulatory proposal supported by one prominent country experience, not a causal estimate that the same design will reproduce Uruguay's outcomes elsewhere. Grid structure, interconnection, financing costs, institutional capacity, and technology mix condition transferability.",
+      tags: ["Electricity markets", "Renewable energy", "Auctions", "Long-term contracts"]
     },
     {
-      title: "The Limits of Verifiability: Credibility and Flexibility in Communication",
-      authors: "Alessandro Lizzeri, Yichuan Lou, and Jacopo Perego",
-      releaseDate: "2 September 2026",
-      publicationStatus: "CEPR Discussion Paper 21900",
-      field: "Disclosure · Information design",
+      title: "Politics-driven Market Access and Its Cost: Evidence from China’s Grand Canal",
+      authors: "Ying Bai, Xiaoyu Bian, and Ruixue Jia",
+      releaseDate: "17 September 2026",
+      publicationStatus: "CEPR Discussion Paper 21951",
+      field: "Infrastructure · Political economy",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21900",
+      sourceHref: "https://cepr.org/publications/dp21951",
       researchQuestion:
-        "When does tying claims to verifiable evidence improve communication, and when does it prevent an informed sender from conveying useful context?",
+        "How much market access did China's Grand Canal create, and what was the economic cost of rerouting infrastructure toward the political capital rather than the commercial core?",
       method:
-        "A sender–receiver model compares verifiable and unverifiable communication when preferences are only partially aligned and the sender's private information is richer than the evidence she can prove.",
+        "The authors construct a grid-year panel spanning five dynasties from the eighth through nineteenth centuries, show that the route best suited to reach the capital predicts the canal's realized path, and use counterfactual analysis to quantify population effects and redesign costs.",
       contribution:
-        "Verifiability creates a credibility–flexibility trade-off: it helps when preferences are sufficiently misaligned but can hinder communication when interests are more closely aligned. Unverifiable messages can complement evidence by contextualizing observations that would otherwise mislead.",
+        "The canal increased population by an estimated 2.5–6.1%, while its politically motivated redesign reduced the gain by 1.1–2.2%. The results quantify how political objectives can redirect infrastructure away from the market-access configuration that would otherwise generate larger settlement effects.",
       caveat:
-        "The thresholds and welfare comparisons are theoretical and depend on the model's evidence and preference structure. The result does not imply that legal verification requirements are generally undesirable, especially where fraud, enforcement, or third-party reliance matters.",
-      tags: ["Disclosure", "Verifiability", "Credibility", "Information design"]
+        "The magnitudes depend on historical spatial measurement and the counterfactual model rather than a modern randomized comparison. Population is an important but incomplete welfare proxy, and servicing a political capital may generate benefits not captured by the market-access benchmark.",
+      tags: ["Market access", "Infrastructure", "Political economy", "Economic history"]
     },
     {
-      title: "Financing Property Rights: Fee-Financed Registration and Unequal Formalisation in Spain, 1845–1935",
-      authors: "Juan Carmona and Joan R. Rosés",
-      releaseDate: "2 September 2026",
-      publicationStatus: "CEPR Discussion Paper 21898",
-      field: "Property law · Legal institutions",
+      title: "Inheritance Customs and the European Marriage Pattern",
+      authors: "Matthew Curtis, Paula Eugenia Gobbi, Marc Goñi, and Joanne Haddad",
+      releaseDate: "16 September 2026",
+      publicationStatus: "CEPR Discussion Paper 21950",
+      field: "Inheritance law · Household institutions",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp21898",
+      sourceHref: "https://cepr.org/publications/dp21950",
       researchQuestion:
-        "How did user fees and transfer taxes shape access to Spain's formally universal land registry and the distributional effects of property-rights formalization?",
+        "Did late marriage and celibacy in early-modern Western Europe reflect women's economic opportunity or financial hardship, and how did inheritance rules mediate the difference?",
       method:
-        "The authors reconstruct the registry's cost structure from fee schedules, fiscal series, and provincial evidence for 1845–1935 and relate the incidence of formalization costs to patterns of registry participation.",
+        "The paper links a new atlas of 2,486 rural and urban inheritance customs in France and Belgium to genealogical records for 75,000 women born from 1500–1750, then estimates a structural model connecting inheritance rules, earning opportunities, marriage, empowerment, and financial constraints.",
       contribution:
-        "Fixed notarial fees, registry charges, and taxes reduced the state's administrative burden but imposed the highest proportional cost on low-value and fragmented properties. A legally universal registry therefore remained economically unequal, and wider territorial coverage did not automatically remove exclusion created by pricing.",
+        "Where inheritance included women and younger siblings, earning opportunities strengthened the European Marriage Pattern; under inegalitarian inheritance, similar family outcomes more often reflected distress. The structural estimates attribute roughly 65% of celibacy to choice rather than constraint.",
       caveat:
-        "The evidence establishes a historically grounded distributional mechanism rather than a modern causal estimate. Institutional capacity, cadastral quality, landholding structure, and available financing technologies differ across countries and periods.",
-      tags: ["Property rights", "Land registry", "User fees", "Distribution"]
+        "Genealogical coverage, the classification of local customs, and the structural separation of choice from constraint may affect the quantitative share. Historical celibacy is not itself a direct measure of autonomy, and the results do not supply a complete normative evaluation of inheritance systems.",
+      tags: ["Inheritance", "Marriage", "Property institutions", "Structural model"]
     }
   ],
   methodsInIssue: [
     {
-      label: "Administrative-data regression discontinuity",
+      label: "Historical-settlement instrumental variables",
       description:
-        "Close gubernatorial elections and 200 million voter records identify persistent political effects of childhood exposure near the electoral cutoff."
+        "Belgian municipal accounts and historical settlement patterns estimate heterogeneous fiscal responses to EU and non-EU immigration."
     },
     {
-      label: "Empirically disciplined equilibrium theory",
+      label: "Randomized pricing plus discrete choice",
       description:
-        "A costly-voting model derives equilibrium comparative statics and evaluates whether one motive structure can reproduce observed electoral patterns."
+        "GPS-tracked travel choices identify behavioral substitution before a structural model compares implementable transport taxes."
     },
     {
-      label: "Shock-based price decomposition",
+      label: "Comparative history and computational text analysis",
       description:
-        "Household transactions and store prices separate retailer adjustments from purchase timing and other consumer responses to a regional downturn."
+        "Primary sources, topic models, sentiment measures, and close reading trace how political visions structure industrial-policy evaluation."
     },
     {
-      label: "Vintage reconstruction and quantitative modeling",
+      label: "Institutional market-design analysis",
       description:
-        "Successive international debt datasets reveal reporting revisions that are then disciplined through a sovereign-default model."
+        "A system-expansion model, procurement rules, and Uruguay's experience motivate a contract-based framework for renewable power."
     },
     {
-      label: "Communication theory",
+      label: "Long-run spatial counterfactual",
       description:
-        "A sender–receiver model identifies when proof requirements improve credibility and when they suppress informative flexibility."
+        "A five-dynasty grid panel and modeled alternative routes quantify infrastructure gains and politically induced market-access losses."
     },
     {
-      label: "Historical institutional incidence",
+      label: "Linked historical atlas and structural estimation",
       description:
-        "Fee schedules, fiscal accounts, and provincial participation connect the financing of a legal institution to unequal practical access."
+        "Local inheritance customs and genealogies identify institutional heterogeneity before a structural model separates opportunity from constraint."
     }
   ],
   watchlist: [
-    "Which education, budget, appointment, or agenda-setting powers transmit governors' partisan influence during childhood.",
-    "Whether prosocial-voting predictions remain distinct from expressive and informational explanations in new field evidence.",
-    "How household purchase timing changes measured inflation, distributional incidence, and competition-policy assessments across retail markets.",
-    "Which audit, disclosure, and lender-verification institutions reduce debt revisions without inducing off-balance-sheet substitution.",
-    "When legal verification rules should permit contextual statements while preserving sanctions for deception and third-party protection.",
-    "How alternative fee schedules, exemptions, or public financing can widen registry participation without weakening record quality or fiscal capacity."
+    "Whether local fiscal responses to immigration persist after accounting for national transfers, labor-market effects, and residential mobility.",
+    "How congestion, emissions, public-transit alternatives, privacy safeguards, and administrative costs change the design of distance-based road pricing.",
+    "Which governance devices make industrial-policy objectives measurable without eliminating the political commitment needed for long-horizon investment.",
+    "How long-term electricity contracts should allocate curtailment, balancing, transmission, and technology-change risk across consumers, investors, and the state.",
+    "When politically targeted infrastructure creates security, administrative, or distributional benefits that compensate for lost market access.",
+    "Whether reforms to inheritance equality alter marriage, fertility, and labor choices under contemporary property and family-law institutions."
   ]
 };
 
 export const WEEKLY_REPORT_SCHEDULE = {
   label: "Every Monday · 08:00",
   timezone: "China Standard Time (UTC+8)",
-  nextUpdate: "14 September 2026 · 08:00"
+  nextUpdate: "28 September 2026 · 08:00"
 };
