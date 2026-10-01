@@ -7,6 +7,18 @@ export type UpdateEntry = {
 
 export const UPDATE_ENTRIES: UpdateEntry[] = [
   {
+    date: "2026-10-01",
+    title: "Research Weekly Issue 009 published",
+    summary:
+      "The weekly research feed now covers six CEPR discussion papers published or revised from 28 September–1 October on AI delegation, investor governance, bank accounting, financial trust, non-tariff barriers, and fiscal constraints.",
+    items: [
+      "Advanced the report to Issue 009, published 1 October 2026, and scheduled the next update for 5 October at 08:00 China Standard Time.",
+      "Expanded the review window to 22 September–1 October 2026 because the scheduled 28 September issue was not published, and disclosed the delayed edition prominently.",
+      "Verified titles, complete author lists, exact publication or revision dates, discussion-paper numbers, methods, and findings against official CEPR records.",
+      "Separated theoretical mechanisms, exposure-based evidence, supervisory microdata, and survey evidence, with a scope or identification caution for every entry."
+    ]
+  },
+  {
     date: "2026-09-21",
     title: "Research Weekly Issue 008 published",
     summary:
