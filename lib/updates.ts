@@ -7,6 +7,18 @@ export type UpdateEntry = {
 
 export const UPDATE_ENTRIES: UpdateEntry[] = [
   {
+    date: "2026-10-05",
+    title: "Research Weekly Issue 010 published",
+    summary:
+      "The weekly research feed now covers three CEPR discussion papers published after Issue 009 on restoring state authority, cross-border semiconductor knowledge, and labor-market sorting under private information.",
+    items: [
+      "Advanced the report to Issue 010, published 5 October 2026, and scheduled the next update for 12 October at 08:00 China Standard Time.",
+      "Used the 2–5 October review interval because Issue 009 was published on 1 October after an expanded review; no paper dated 1 October or earlier was repeated.",
+      "Verified titles, complete author lists, publication dates, discussion-paper numbers, and abstract-level claims against official CEPR records.",
+      "Disclosed that the public record for the semiconductor paper does not specify its datasets or identification design instead of supplying unverified methodological detail."
+    ]
+  },
+  {
     date: "2026-10-01",
     title: "Research Weekly Issue 009 published",
     summary:
