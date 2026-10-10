@@ -6,12 +6,13 @@ import { getAllScholars } from "@/lib/field-history";
 import { COMPARATIVE_DIMENSIONS } from "@/lib/research-guides";
 import { getSiteUrl } from "@/lib/site-url";
 import { getAllReadings, getAllTopics } from "@/lib/topics";
+import { WEEKLY_REPORT_ARCHIVE } from "@/lib/weekly-report-archive";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();
-  const staticPages = ["", "/start-here", "/concepts", "/cases", "/debates", "/comparative-law", "/weekly-report", "/topics", "/history", "/scholars", "/scholar-match", "/literature", "/methods", "/about", "/source-policy", "/citation"].map((path) => ({
+  const staticPages = ["", "/start-here", "/concepts", "/cases", "/debates", "/comparative-law", "/weekly-report", "/weekly-report/archive", "/topics", "/history", "/scholars", "/scholar-match", "/literature", "/methods", "/about", "/source-policy", "/citation"].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
@@ -67,6 +68,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.65
   }));
 
+  const weeklyReportPages = WEEKLY_REPORT_ARCHIVE.map(({ slug, report }) => ({
+    url: `${baseUrl}/weekly-report/archive/${slug}`,
+    lastModified: new Date(report.publishedAt),
+    changeFrequency: "never" as const,
+    priority: 0.55
+  }));
+
   return [
     ...staticPages,
     ...topicPages,
@@ -75,6 +83,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...conceptPages,
     ...readingPages,
     ...casePages,
-    ...comparativePages
+    ...comparativePages,
+    ...weeklyReportPages
   ];
 }

@@ -66,6 +66,13 @@ export function getSearchIndex(): SearchItem[] {
       keywords: ["weekly report", "research weekly", "latest research", "new scholarship", "working papers", "journal articles"]
     },
     {
+      title: "Research Weekly Archive",
+      href: "/weekly-report/archive",
+      type: "Page",
+      description: "Preserved back issues of the weekly academic research feed.",
+      keywords: ["weekly archive", "past issues", "back issues", "research weekly history"]
+    },
+    {
       title: "Methods Toolkit",
       href: "/methods",
       type: "Page",

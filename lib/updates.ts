@@ -7,6 +7,17 @@ export type UpdateEntry = {
 
 export const UPDATE_ENTRIES: UpdateEntry[] = [
   {
+    date: "2026-10-10",
+    title: "Research Weekly archive introduced",
+    summary:
+      "The site now preserves complete Research Weekly back issues and provides a dedicated archive entry from the latest report page.",
+    items: [
+      "Restored Issues 002–009 from their committed publication versions and retained Issue 010 as the current edition.",
+      "Added an archive index and statically generated issue pages with the original source windows, research entries, methods, cautions, and watchlists.",
+      "Added archive discovery through the current report page, footer, site search, breadcrumbs, and sitemap."
+    ]
+  },
+  {
     date: "2026-10-05",
     title: "Research Weekly Issue 010 published",
     summary:

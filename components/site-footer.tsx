@@ -10,7 +10,8 @@ const researchLinks = [
   { href: "/concepts", label: "Concepts" },
   { href: "/cases", label: "Cases" },
   { href: "/methods", label: "Methods" },
-  { href: "/weekly-report", label: "Research Weekly" }
+  { href: "/weekly-report", label: "Research Weekly" },
+  { href: "/weekly-report/archive", label: "Weekly Archive" }
 ];
 
 const siteLinks = [

@@ -12,6 +12,7 @@ const labels: Record<string, string> = {
   cases: "Cases",
   methods: "Methods",
   "weekly-report": "Research Weekly",
+  archive: "Issue Archive",
   history: "History & Theory",
   "theory-lineages": "History & Theory",
   scholars: "Scholars",
