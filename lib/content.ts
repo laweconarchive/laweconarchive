@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import matter from "gray-matter";
+import { load as parseYaml } from "js-yaml";
 import readingTime from "reading-time";
 
 export const CATEGORIES = [
@@ -56,6 +56,25 @@ export type Article = ArticleMeta & {
 
 const POSTS_DIRECTORY = path.join(process.cwd(), "content/posts");
 
+function parseDocument(raw: string) {
+  const source = raw.replace(/^\uFEFF/, "");
+  const match = source.match(/^---[ \t]*\r?\n([\s\S]*?)\r?\n---[ \t]*(?:\r?\n|$)/);
+
+  if (!match) {
+    return { data: {} as Record<string, unknown>, content: source };
+  }
+
+  const parsed = parseYaml(match[1]);
+  const data = parsed && typeof parsed === "object" && !Array.isArray(parsed)
+    ? parsed as Record<string, unknown>
+    : {};
+
+  return {
+    data,
+    content: source.slice(match[0].length)
+  };
+}
+
 function slugify(text: string) {
   return text
     .trim()
@@ -85,7 +104,7 @@ function extractToc(source: string): HeadingItem[] {
 }
 
 function parseFrontmatter(raw: string, slug: string): Article {
-  const { data, content } = matter(raw);
+  const { data, content } = parseDocument(raw);
 
   const title = String(data.title ?? "Untitled Article");
   const subtitle = String(data.subtitle ?? "");
@@ -94,7 +113,10 @@ function parseFrontmatter(raw: string, slug: string): Article {
   const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
   const keywords = Array.isArray(data.keywords) ? data.keywords.map(String) : tags;
   const summary = String(data.summary ?? data.abstract ?? "");
-  const category = (CATEGORIES.includes(data.category) ? data.category : "Research Methods") as Category;
+  const categoryValue = String(data.category ?? "");
+  const category = CATEGORIES.includes(categoryValue as Category)
+    ? categoryValue as Category
+    : "Research Methods";
   const related = Array.isArray(data.related) ? data.related.map(String) : [];
   const references = Array.isArray(data.references)
     ? data.references.map((item, idx) => {
