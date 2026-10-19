@@ -29,175 +29,159 @@ export type WeeklyReportIssue = {
 };
 
 export const WEEKLY_REPORT: WeeklyReportIssue = {
-  issue: "Issue 011",
-  publishedAt: "12 October 2026",
-  period: "Review window: 6–12 October 2026",
+  issue: "Issue 012",
+  publishedAt: "19 October 2026",
+  period: "Review window: 13–19 October 2026",
   headline:
-    "New research on digital rights, personalized pricing, mergers, licensing, and judicial expectations",
+    "New research on state control, common ownership, IPOs, road pricing, platform work, and police discretion",
   editorialNote:
     "Research Weekly tracks newly released law-and-economics scholarship. Each entry identifies the paper's status and source date, then separates its question, method, contribution, and interpretation boundary.",
   coverageNote:
-    "This issue selects seven CEPR Discussion Papers first published between 7 and 12 October 2026. The hospital-merger paper was also revised on 12 October; its date is shown separately. The review window begins on 6 October, immediately after Issue 010. Titles, full author lists, dates, paper numbers, and abstract-level claims were checked against CEPR's individual publication records. These notes rely on the public records; where the full paper's data, identification, or model details are unavailable, the limitation is stated. The selection is thematic rather than a complete census of every paper released during the window.",
+    "This issue selects six papers from three independent research series: two CEPR Discussion Papers, two NBER Working Papers, and two IZA Discussion Papers. The review began on 13 October, immediately after Issue 011. CEPR supplies exact publication dates of 17 October. NBER and IZA identify the selected papers as October 2026 releases but do not state an exact day on their public records; those entries therefore report the month without inventing a date. The papers appeared in the institutions' current listings during this review. The candidate search also checked ECGI and CESifo working-paper listings, alongside journal and repository searches, but found no additional record that combined this window's timing, direct law-and-economics relevance, and a sufficiently verifiable public abstract. Titles, author lists, paper numbers, dates as supplied, and abstract-level claims were checked against the institutional paper pages. No source supplies more than one-third of the issue.",
   latestResearch: [
     {
-      title: "Personalized Pricing and the Value of Past Purchase Histories: An Empirical Perspective",
-      authors: "Isis Durrmeyer, Jean-François Fournel, and Mario Samano",
-      releaseDate: "12 October 2026",
-      publicationStatus: "CEPR Discussion Paper 22038",
-      field: "Consumer data · Competition policy",
+      title: "Who Controls the Defence Industry?",
+      authors: "Marco Becht, Juan Mejino-López, and Guntram B. Wolff",
+      releaseDate: "17 October 2026",
+      publicationStatus: "CEPR Discussion Paper 22051",
+      field: "Corporate governance · State control",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp22038",
+      sourceHref: "https://cepr.org/publications/dp22051",
       researchQuestion:
-        "What do retailers gain from pricing based on customers' purchase histories, and how are the gains and losses distributed among consumers?",
+        "How do states exercise control over strategically important defence firms when equity ownership and formal governance authority do not coincide?",
       method:
-        "A structural demand-and-pricing model lets a Bayesian seller learn consumer preferences from past grocery purchases and set personalized prices. The public CEPR abstract does not specify the underlying transaction dataset or all estimation assumptions.",
+        "The authors use large-language-model extraction from annual reports, supplemented by hand coding, to build a leximetric dataset for 107 large defence companies in 24 countries from the SIPRI Top 100 for 2022–2024. Their State Influence Index combines voting power, voting enhancements, board appointment rights, and veto rights.",
       contribution:
-        "With one year of purchase histories, the model estimates a 7.1% profit increase. Although 84.1% of consumers gain, the losses borne by the remainder outweigh those gains, reducing aggregate consumer surplus. The model also shows why opting out of a fee-charging loyalty program may itself reveal price sensitivity.",
+        "The paper shows that ownership alone does not measure state control: minority stakes can be amplified by legal devices, while states without equity can rely on security agreements, revenue dependence, or personnel ties. The cross-country patterns are consistent with transaction-cost and property-rights reasoning about asset specificity and bilateral dependence.",
       caveat:
-        "These are model-based estimates for the studied grocery setting, not an observed effect of an enacted data or competition rule. Welfare and distributional estimates depend on demand estimation, seller learning, and the assumed option to opt out.",
-      tags: ["Personalized pricing", "Consumer data", "Price discrimination", "Competition"]
+        "The index measures documented formal mechanisms and selected institutional proxies, not every channel of informal influence. LLM extraction and hand coding require validation, and the descriptive cross-country patterns do not by themselves identify the causal effects of state control.",
+      tags: ["State ownership", "Corporate control", "Transaction costs", "Defence industry"]
     },
     {
-      title: "Beyond Digital Rights: An Institutional Architecture for Consumer Empowerment",
-      authors: "Dennis Snower, Paul Twomey, and Vicente Arias",
-      releaseDate: "11 October 2026",
-      publicationStatus: "CEPR Discussion Paper 22036",
-      field: "Digital governance · Institutional design",
+      title: "Measuring Common Ownership: An Axiomatic Approach",
+      authors: "Thomas Gehrig and Klaus Ritzberger",
+      releaseDate: "17 October 2026",
+      publicationStatus: "CEPR Discussion Paper 22057",
+      field: "Common ownership · Competition measurement",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp22036",
+      sourceHref: "https://cepr.org/publications/dp22057",
       researchQuestion:
-        "Why do formal personal-data rights often fail to give consumers effective bargaining power in digital markets, and what institutional arrangement could close that gap?",
+        "What properties should a measure of common ownership satisfy, and can those properties identify a unique measure?",
       method:
-        "The authors develop a conceptual institutional architecture, IDEA, combining verified key personal data, accredited expert representation, fiduciary governance of delegated authority, and collective negotiation. The public record presents a design argument rather than a causal evaluation or new dataset.",
+        "The paper develops an axiomatic framework based on ownership distributions. It studies symmetry, normalization, and orthogonality, then adds a structural axiom to characterize admissible measures.",
       contribution:
-        "The paper's claim is that the four mechanisms reinforce one another: control permits authorization, representation supplies expertise, fiduciary duties constrain agents, and collective bargaining turns dispersed rights into continuing market participation.",
+        "Together with normalization, the structural axiom singles out cosine similarity as the unique measure satisfying all stated axioms. The framework also clarifies how widely used empirical common-ownership measures relate to the proposed desiderata.",
       caveat:
-        "The architecture is a proposal, not evidence that it improves welfare in operation. Implementation would depend on enforceable fiduciary duties, trusted verification, representative accountability, and the cost of collective governance.",
-      tags: ["Data rights", "Fiduciary duties", "Collective bargaining", "Digital markets"]
+        "Axiomatic uniqueness is conditional on accepting the selected axioms. The paper does not establish that cosine similarity is the best predictor of conduct, competition, or welfare in every ownership setting.",
+      tags: ["Common ownership", "Competition", "Measurement", "Axioms"]
     },
     {
-      title: "Divisive by Design: Shaping Values in Optimal Mechanisms",
-      authors: "Anja Prummer and Francesco Nava",
-      releaseDate: "10 October 2026",
-      publicationStatus: "CEPR Discussion Paper 22035",
-      field: "Mechanism design · Information rents",
-      sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp22035",
+      title: "Access to Capital and the IPO Decision: An Analysis of US Private Firms",
+      authors: "Andres Almazan, Nathan Swem, Sheridan Titman, and Gregory Weitzner",
+      releaseDate: "October 2026 (exact day not stated by NBER)",
+      publicationStatus: "NBER Working Paper 35888 · DOI 10.3386/w35888",
+      field: "Corporate finance · Securities markets",
+      sourceLabel: "NBER",
+      sourceHref: "https://www.nber.org/papers/w35888",
       researchQuestion:
-        "When a principal can change a good's features, is it optimal to design it to appeal broadly or to create stronger differences in agents' valuations?",
+        "Do firms go public principally to obtain equity, or does listing improve access to debt and external finance more broadly?",
       method:
-        "A theoretical optimal-mechanism model has agents with private, independently distributed values; the principal chooses features that shift those value distributions before allocating the good.",
+        "The authors analyze detailed financial data on U.S. private firms, relating external capital needs to IPO decisions and tracking investment, debt issuance, lender pools, borrowing terms, and banks' private risk assessments after listing. The public abstract does not describe the full sample construction or identification design.",
       contribution:
-        "The model finds that designs appealing strongly to some agent types can reduce information rents and raise total surplus despite weakening competition. Some divisiveness remains optimal even when total surplus is constrained.",
+        "Firms with greater external capital needs are more likely to go public. After an IPO, investment and debt issuance increase without a comparable change in leverage ratios; lender pools expand, terms improve, and disagreement in banks' private risk assessments narrows. The authors interpret this as evidence that reduced information asymmetry broadens access to capital beyond the equity issue itself.",
       caveat:
-        "This is a model result under particular information and distributional assumptions. It does not show that exclusionary product design is lawful, desirable in every market, or empirically welfare-improving.",
-      tags: ["Mechanism design", "Private information", "Product design", "Information rents"]
+        "The public record does not show how the analysis separates the effect of listing from selection into IPOs or concurrent firm growth. The findings describe U.S. private firms represented in the underlying data and should not be read as a universal causal effect of going public.",
+      tags: ["IPO", "Capital access", "Debt markets", "Information asymmetry"]
     },
     {
-      title: "Who Benefits from Market Concentration? The Effects of Hospital Mergers on Physician Income.",
-      authors: "Jan Boone, Martin Salm, and Sofia Santin",
-      releaseDate: "8 October 2026; revised 12 October 2026",
-      publicationStatus: "CEPR Discussion Paper 22025 · revised version",
-      field: "Merger policy · Health-care markets",
-      sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp22025",
+      title: "Road Pricing under Heterogeneity",
+      authors: "Itai Ater, Brad Ross, Adi Shany, and Shoshana Vasserman",
+      releaseDate: "October 2026 (exact day not stated by NBER)",
+      publicationStatus: "NBER Working Paper 35887 · DOI 10.3386/w35887",
+      field: "Public economics · Congestion pricing",
+      sourceLabel: "NBER",
+      sourceHref: "https://www.nber.org/papers/w35887",
       researchQuestion:
-        "How do hospital mergers affect physicians' income under self-employment versus salaried contracts?",
+        "How do differences in drivers' preferences and exposure to congested roads affect the efficiency and distribution of congestion pricing?",
       method:
-        "The authors examine 17 Dutch hospital mergers from 2011 to 2018 using administrative data, a difference-in-differences design, and a theoretical model that distinguishes physician contract types.",
+        "The study combines a two-year field experiment tracking nearly 10,000 drivers under usage-based pricing incentives with a model of time-varying traffic equilibrium on a granular road network. It evaluates welfare and compensation under alternative pricing and revenue-recycling arrangements.",
       contribution:
-        "The study reports a 3.86% income increase for self-employed medical specialists and no income effect for salaried specialists. It also reports fewer admissions and physicians, without significant effects on hospital expenditure or 30-day mortality.",
+        "The model estimates that the experiment's price schedule could generate welfare gains comparable to adding a lane to every highway and enough revenue to compensate losers. Heterogeneity matters: optimal prices can improve net welfare even when only a small share of toll revenue is counted.",
       caveat:
-        "Causal interpretation depends on the difference-in-differences comparison and merger selection. Effects on physician income do not alone establish overall patient welfare or transfer to health systems with different contracting arrangements.",
-      tags: ["Hospital mergers", "Market power", "Physician contracts", "Difference-in-differences"]
+        "The welfare magnitudes are model-based and depend on the road network, behavioral responses, equilibrium assumptions, and feasible revenue recycling. Compensation being available in aggregate does not mean that an implemented policy would actually identify and compensate every loser.",
+      tags: ["Congestion pricing", "Heterogeneity", "Field experiment", "Revenue recycling"]
     },
     {
-      title: "Do Judges Move Markets? Ideological Shifts in the Supreme Court and Macroeconomic Expectations",
-      authors: "Thomas Drechsel and Naixin Zhang",
-      releaseDate: "8 October 2026",
-      publicationStatus: "CEPR Discussion Paper 22024",
-      field: "Judicial institutions · Financial markets",
-      sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp22024",
+      title: "Deliver Us from Crime? Gig Jobs, Labor-Market Opportunities, and Offending",
+      authors: "Hugo Allouard, Grazia Cecere, Jose De Sousa, Olivier Marie, and Ines Picard",
+      releaseDate: "October 2026 (exact day not stated by IZA)",
+      publicationStatus: "IZA Discussion Paper 19006",
+      field: "Economics of crime · Platform work",
+      sourceLabel: "IZA",
+      sourceHref:
+        "https://www.iza.org/publications/dp/19006/deliver-us-from-crime-gig-jobs-labor-market-opportunities-and-offending",
       researchQuestion:
-        "Do unexpected changes in the U.S. Supreme Court's ideological balance alter financial markets' expectations about inflation, activity, and fiscal policy?",
+        "Does access to low-barrier platform work change legal employment opportunities and criminal offending?",
       method:
-        "Unexpected deaths of justices serve as quasi-experimental shifts in the Court's composition. The authors study high-frequency asset-price responses and compare yield patterns with fiscal-news estimates, using sectoral stock responses as a validation exercise.",
+        "The authors exploit the staggered rollout of food-delivery platforms across France, combining labor-market outcomes with national criminal records. They also compare offending around the legal minimum age of 18 for delivery work and examine reoffending by whether prior records permit platform work.",
       contribution:
-        "The paper reports that a more conservative Court is associated with lower inflation and activity expectations and lower bond yields; a more liberal shift has the opposite pattern. The authors interpret the joint response as news about future aggregate demand and fiscal policy.",
+        "Platform entry increases delivery-worker registrations, reduces unemployment among men and inactivity among male migrants, and is associated with lower vandalism, petty theft, and drug offending. Crime falls just above, but not just below, the eligibility age; reoffending also declines among people whose records allow platform work.",
       caveat:
-        "Asset-price changes measure market beliefs around rare events, not realized macroeconomic effects of subsequent court decisions. Other news around each event and the small set of ideological shifts constrain causal and external interpretation.",
-      tags: ["Courts", "Judicial ideology", "Asset prices", "Expectations"]
+        "The staggered-entry design depends on rollout timing being conditionally unrelated to other local changes. Age and record-based contrasts strengthen the mechanism evidence but do not eliminate every source of selection, and the results may not generalize beyond French platform rules and labor markets.",
+      tags: ["Crime", "Gig work", "Platform entry", "Labor-market opportunity"]
     },
     {
-      title: "At-Risk or Responsive? Targeting in Unemployment Policy",
-      authors: "Sebastian Ernst, Andreas I. Mueller, Johannes Spinnewijn, and Joost Bollens",
-      releaseDate: "8 October 2026",
-      publicationStatus: "CEPR Discussion Paper 22028",
-      field: "Public program design · Algorithmic targeting",
-      sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp22028",
+      title: "Debiasing Law Enforcement Officers: Evidence from an Expressive Arts Intervention in India",
+      authors: "Sofia Amaral, Girija Borker, Nishith Prakash, and Maria Micaela Sviatschi",
+      releaseDate: "October 2026 (exact day not stated by IZA)",
+      publicationStatus: "IZA Discussion Paper 19005",
+      field: "Law enforcement · Bureaucratic discretion",
+      sourceLabel: "IZA",
+      sourceHref:
+        "https://www.iza.org/publications/dp/19005/debiasing-law-enforcement-officers-evidence-from-an-expressive-arts-intervention-in-india",
       researchQuestion:
-        "Should job-search assistance prioritize people at greatest risk of long-term unemployment or those most likely to benefit from counseling?",
+        "Can a short expressive-arts intervention change incumbent police officers' attitudes and discretionary responses to gender-based violence?",
       method:
-        "Three regression-discontinuity designs use administrative records from Belgium's Flemish Public Employment Service. The authors combine estimated treatment responsiveness with predicted job-finding probabilities in a calibrated targeting framework.",
+        "In partnership with the Bihar Police, the researchers run a cluster-randomized trial across 417 police stations and about 2,500 senior officers. They measure attitudes and legal knowledge, conduct victim audits roughly a year later, examine administrative registration delays and citizen reporting, and use officer transfers to study possible diffusion.",
       contribution:
-        "Counseling increases employment on average, but effects decline with predicted risk. In the authors' calibrated framework, rules using both responsiveness and baseline job-finding probability yield welfare gains nearly three times those from random assignment, while targeting risk alone performs worse.",
+        "Treated officers show more favorable attitudes, empathy, and legal knowledge. Treated stations are 15 percentage points less likely to blame victims in audits, dismiss fewer complaints, provide more referrals, and show a 41% decline in registration delays; longer-run reporting rises, with suggestive evidence of spillovers through transfers.",
       caveat:
-        "Regression-discontinuity estimates apply most directly near the relevant assignment cutoffs; the broader welfare ranking depends on the calibrated framework. The result does not by itself settle fairness, transparency, or legal constraints on algorithmic allocation.",
-      tags: ["Unemployment policy", "Algorithmic targeting", "Regression discontinuity", "Welfare"]
-    },
-    {
-      title: "Occupational Licensing Without Learning",
-      authors: "Pablo Blanchard, Sebastian Fleitas, and Nicolas Malfetano",
-      releaseDate: "7 October 2026",
-      publicationStatus: "CEPR Discussion Paper 22018",
-      field: "Occupational regulation · Entry barriers",
-      sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp22018",
-      researchQuestion:
-        "How much of accountants' licensing-related earnings reflects scarce entry rights rather than the skills acquired in training?",
-      method:
-        "The authors use a reform at Uruguay's main university that shortened the accounting degree and licensed students already working alongside incumbents without additional learning requirements. They compare incumbent accountants' earnings with those of comparable professionals.",
-      contribution:
-        "Following entry by newly licensed accountants, incumbent earnings fell by about 9% relative to comparable professionals while employment did not change, a pattern consistent with licensing rents.",
-      caveat:
-        "The comparison relies on the reform isolating new licensing access from other contemporaneous changes. The estimated earnings effect concerns this profession and reform; it does not measure all quality or consumer-protection effects of licensing.",
-      tags: ["Occupational licensing", "Accountants", "Entry", "Scarcity rents"]
+        "The intervention is institution- and context-specific, and some outcomes rely on audits or administrative records. Transfer-based spillovers are described as suggestive, while multiple outcomes and longer-run reporting changes require care in distinguishing treatment effects from measurement and reporting responses.",
+      tags: ["Police", "Bureaucratic discretion", "Randomized trial", "Gender-based violence"]
     }
   ],
   methodsInIssue: [
     {
-      label: "Structural pricing and demand",
+      label: "Leximetric institutional measurement",
       description:
-        "The personalized-pricing study models how purchase histories update a seller's beliefs; its welfare estimates depend on model assumptions rather than an observed legal change."
+        "The defence-industry paper converts governance documents into comparable control indicators, combining automated extraction with human coding; interpretation depends on both construct validity and source coverage."
     },
     {
-      label: "Institutional and mechanism design",
+      label: "Axiomatic characterization",
       description:
-        "The digital-rights proposal specifies complementary governance mechanisms, while the divisive-design model derives allocations under private information."
+        "The common-ownership paper asks which measure follows from stated mathematical properties, so its conclusion is a conditional theorem rather than an empirical welfare estimate."
     },
     {
-      label: "Difference-in-differences and local discontinuities",
+      label: "Field experiments and equilibrium models",
       description:
-        "Dutch hospital-merger comparisons and Belgian counseling assignment cutoffs estimate different treatment effects with different identifying assumptions."
+        "The road-pricing study combines observed behavioral responses with a network model, while the police study randomizes an organizational intervention and follows both attitudes and conduct."
     },
     {
-      label: "High-frequency event evidence",
+      label: "Staggered adoption and institutional thresholds",
       description:
-        "The Supreme Court study reads asset-price responses to unexpected judicial vacancies as revisions in market expectations, not realized policy outcomes."
+        "The platform-crime paper triangulates rollout timing with legal-age and criminal-record eligibility contrasts; each comparison addresses a different part of the opportunity-cost mechanism."
     }
   ],
   watchlist: [
-    "How data-protection and competition rules alter the distributional effects of personalized pricing when opting out conveys information.",
-    "Whether fiduciary representation and collective data negotiation can be implemented with measurable gains in consumer agency.",
-    "How merger review should account for contractual distribution of gains among hospitals, physicians, and patients.",
-    "Whether occupational entry reforms and algorithmic public-service targeting retain their estimated effects in other professions and jurisdictions."
+    "Whether state-influence indices predict procurement, investment, disclosure, or performance after accounting for national security regulation.",
+    "How competing common-ownership measures change empirical estimates used in merger and competition analysis.",
+    "Whether post-IPO improvements in lending terms survive research designs that more fully address selection into public markets.",
+    "Whether low-barrier work opportunities and police-training interventions retain their effects under different platform rules, enforcement institutions, and legal cultures."
   ]
 };
 
 export const WEEKLY_REPORT_SCHEDULE = {
   label: "Every Monday · 08:00",
   timezone: "China Standard Time (UTC+8)",
-  nextUpdate: "19 October 2026 · 08:00"
+  nextUpdate: "26 October 2026 · 08:00"
 };

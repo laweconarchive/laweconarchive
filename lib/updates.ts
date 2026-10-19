@@ -7,6 +7,19 @@ export type UpdateEntry = {
 
 export const UPDATE_ENTRIES: UpdateEntry[] = [
   {
+    date: "2026-10-19",
+    title: "Research Weekly Issue 012 published",
+    summary:
+      "The weekly research feed now draws from CEPR, NBER, and IZA to cover new work on state control, common ownership, IPOs, road pricing, platform work, and police discretion.",
+    items: [
+      "Advanced the current report to Issue 012, covering 13–19 October 2026, and scheduled the next update for 26 October at 08:00 China Standard Time.",
+      "Preserved the complete Issue 011 in the Research Weekly archive before replacing the current issue.",
+      "Selected two papers each from CEPR, NBER, and IZA; no single source supplies more than one-third of the issue.",
+      "Reported CEPR's exact publication dates and explicitly marked that NBER and IZA provide only an October 2026 date on the public records, rather than assigning unverified days.",
+      "Checked ECGI, CESifo, journal, and repository listings while keeping the final selection limited to records with direct relevance and verifiable abstracts."
+    ]
+  },
+  {
     date: "2026-10-12",
     title: "Research Weekly Issue 011 published",
     summary:
