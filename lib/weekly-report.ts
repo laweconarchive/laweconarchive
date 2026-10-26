@@ -29,159 +29,141 @@ export type WeeklyReportIssue = {
 };
 
 export const WEEKLY_REPORT: WeeklyReportIssue = {
-  issue: "Issue 012",
-  publishedAt: "19 October 2026",
-  period: "Review window: 13–19 October 2026",
+  issue: "Issue 013",
+  publishedAt: "26 October 2026",
+  period: "Review window: 20–26 October 2026",
   headline:
-    "New research on state control, common ownership, IPOs, road pricing, platform work, and police discretion",
+    "New research on merger conduct, digital consent, common ownership, financial accountability, and mortgage pricing",
   editorialNote:
     "Research Weekly tracks newly released law-and-economics scholarship. Each entry identifies the paper's status and source date, then separates its question, method, contribution, and interpretation boundary.",
   coverageNote:
-    "This issue selects six papers from three independent research series: two CEPR Discussion Papers, two NBER Working Papers, and two IZA Discussion Papers. The review began on 13 October, immediately after Issue 011. CEPR supplies exact publication dates of 17 October. NBER and IZA identify the selected papers as October 2026 releases but do not state an exact day on their public records; those entries therefore report the month without inventing a date. The papers appeared in the institutions' current listings during this review. The candidate search also checked ECGI and CESifo working-paper listings, alongside journal and repository searches, but found no additional record that combined this window's timing, direct law-and-economics relevance, and a sufficiently verifiable public abstract. Titles, author lists, paper numbers, dates as supplied, and abstract-level claims were checked against the institutional paper pages. No source supplies more than one-third of the issue.",
+    "This issue selects five papers from three independent research series: two CEPR Discussion Papers, one ECGI Working Paper, and two NBER Working Papers. The review began on 20 October, immediately after Issue 012. CEPR and ECGI supply exact publication dates between 22 and 25 October. NBER identifies the selected papers as October 2026 releases and placed them in its New This Week listing reviewed on 26 October, but its public paper records do not state an exact day; those entries therefore report the month without inventing a date. The candidate search also checked IZA, CESifo, journal and publisher pages, author pages, and institutional repositories. IZA's public index showed no paper newer than those already reviewed, while no additional CESifo or journal record combined this window's timing, direct law-and-economics relevance, and a sufficiently verifiable public abstract. Titles, complete author lists, series numbers, DOI information where supplied, dates as supplied, methods, and abstract-level claims were checked against the institutional paper pages. No source supplies more than two-fifths of the issue.",
   latestResearch: [
     {
-      title: "Who Controls the Defence Industry?",
-      authors: "Marco Becht, Juan Mejino-López, and Guntram B. Wolff",
-      releaseDate: "17 October 2026",
-      publicationStatus: "CEPR Discussion Paper 22051",
-      field: "Corporate governance · State control",
+      title: "Separating Cost Recovery from Conduct",
+      authors: "Martin Pesendorfer and Taisuke Otsu",
+      releaseDate: "25 October 2026",
+      publicationStatus: "CEPR Discussion Paper 22082",
+      field: "Merger analysis · Industrial organization",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp22051",
+      sourceHref: "https://cepr.org/publications/dp22082",
       researchQuestion:
-        "How do states exercise control over strategically important defence firms when equity ownership and formal governance authority do not coincide?",
+        "Can marginal costs be recovered without imposing a particular model of post-merger conduct, and what would that imply for diagnosis and remedies?",
       method:
-        "The authors use large-language-model extraction from annual reports, supplemented by hand coding, to build a leximetric dataset for 107 large defence companies in 24 countries from the SIPRI Top 100 for 2022–2024. Their State Influence Index combines voting power, voting enhancements, board appointment rights, and veto rights.",
+        "The paper derives marginal costs from incentive-compatibility first-order conditions while allowing firms to hold private cost information. It applies the approach to the MillerCoors joint venture and constructs bounds on welfare outcomes across incentive-compatible market mechanisms.",
       contribution:
-        "The paper shows that ownership alone does not measure state control: minority stakes can be amplified by legal devices, while states without equity can rely on security agreements, revenue dependence, or personnel ties. The cross-country patterns are consistent with transaction-cost and property-rights reasoning about asset specificity and bilateral dependence.",
+        "In the application, post-merger price increases can largely be rationalized by firm-specific cost heterogeneity and unilateral pricing incentives rather than large coordinated effects. The welfare bounds provide a way to compare merger remedies without selecting a single conduct model in advance.",
       caveat:
-        "The index measures documented formal mechanisms and selected institutional proxies, not every channel of informal influence. LLM extraction and hand coding require validation, and the descriptive cross-country patterns do not by themselves identify the causal effects of state control.",
-      tags: ["State ownership", "Corporate control", "Transaction costs", "Defence industry"]
+        "The method still relies on incentive-compatibility and equilibrium restrictions, and the empirical conclusions are tied to the information and market structure in the MillerCoors setting. The abstract does not report all data construction or counterfactual implementation details.",
+      tags: ["Merger review", "Marginal costs", "Private information", "Remedies"]
     },
     {
-      title: "Measuring Common Ownership: An Axiomatic Approach",
-      authors: "Thomas Gehrig and Klaus Ritzberger",
-      releaseDate: "17 October 2026",
-      publicationStatus: "CEPR Discussion Paper 22057",
-      field: "Common ownership · Competition measurement",
+      title: "Consent and Choice: Experimental Evidence on User Behavior at Consent Banners",
+      authors: "Cristiana Firullo, Francesco Decarolis, Cristobal Cheyre, and Alessandro Acquisti",
+      releaseDate: "23 October 2026",
+      publicationStatus: "CEPR Discussion Paper 22078",
+      field: "Privacy regulation · Consumer choice",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp22057",
+      sourceHref: "https://cepr.org/publications/dp22078",
       researchQuestion:
-        "What properties should a measure of common ownership satisfy, and can those properties identify a unique measure?",
+        "How do people respond to consent banners across repeated real-world encounters, and how do interface rules alter engagement, exit, and expressed tracking preferences?",
       method:
-        "The paper develops an axiomatic framework based on ownership distributions. It studies symmetry, normalization, and orthogonality, then adds a structural axiom to characterize admissible measures.",
+        "A browser extension followed a panel of 789 U.S. Chrome users for up to three months across the websites they visited. The study compares engagement and exit across banner designs and evaluates whether early choices predict later responses.",
       contribution:
-        "Together with normalization, the structural axiom singles out cosine similarity as the unique measure satisfying all stated axioms. The framework also clarifies how widely used empirical common-ownership measures relate to the proposed desiderata.",
+        "Users engage with about one-third of encountered banners. Sites that force a response obtain roughly three times more engagement but lose more than twice as many visitors after the encounter; a one-click rejection option materially changes stated choices. An early-choice signal predicts about two-thirds of later encounters, and the authors estimate that removing forced responses would reduce time spent on banners by 58%.",
       caveat:
-        "Axiomatic uniqueness is conditional on accepting the selected axioms. The paper does not establish that cosine similarity is the best predictor of conduct, competition, or welfare in every ownership setting.",
-      tags: ["Common ownership", "Competition", "Measurement", "Axioms"]
+        "The panel covers U.S. Chrome users who kept the extension installed, so selection and external validity require care. Observed clicks do not by themselves establish informed or legally valid consent, and time savings do not capture every privacy or welfare consequence.",
+      tags: ["Consent banners", "Privacy", "Interface design", "Consumer behavior"]
     },
     {
-      title: "Access to Capital and the IPO Decision: An Analysis of US Private Firms",
-      authors: "Andres Almazan, Nathan Swem, Sheridan Titman, and Gregory Weitzner",
-      releaseDate: "October 2026 (exact day not stated by NBER)",
-      publicationStatus: "NBER Working Paper 35888 · DOI 10.3386/w35888",
-      field: "Corporate finance · Securities markets",
-      sourceLabel: "NBER",
-      sourceHref: "https://www.nber.org/papers/w35888",
-      researchQuestion:
-        "Do firms go public principally to obtain equity, or does listing improve access to debt and external finance more broadly?",
-      method:
-        "The authors analyze detailed financial data on U.S. private firms, relating external capital needs to IPO decisions and tracking investment, debt issuance, lender pools, borrowing terms, and banks' private risk assessments after listing. The public abstract does not describe the full sample construction or identification design.",
-      contribution:
-        "Firms with greater external capital needs are more likely to go public. After an IPO, investment and debt issuance increase without a comparable change in leverage ratios; lender pools expand, terms improve, and disagreement in banks' private risk assessments narrows. The authors interpret this as evidence that reduced information asymmetry broadens access to capital beyond the equity issue itself.",
-      caveat:
-        "The public record does not show how the analysis separates the effect of listing from selection into IPOs or concurrent firm growth. The findings describe U.S. private firms represented in the underlying data and should not be read as a universal causal effect of going public.",
-      tags: ["IPO", "Capital access", "Debt markets", "Information asymmetry"]
-    },
-    {
-      title: "Road Pricing under Heterogeneity",
-      authors: "Itai Ater, Brad Ross, Adi Shany, and Shoshana Vasserman",
-      releaseDate: "October 2026 (exact day not stated by NBER)",
-      publicationStatus: "NBER Working Paper 35887 · DOI 10.3386/w35887",
-      field: "Public economics · Congestion pricing",
-      sourceLabel: "NBER",
-      sourceHref: "https://www.nber.org/papers/w35887",
-      researchQuestion:
-        "How do differences in drivers' preferences and exposure to congested roads affect the efficiency and distribution of congestion pricing?",
-      method:
-        "The study combines a two-year field experiment tracking nearly 10,000 drivers under usage-based pricing incentives with a model of time-varying traffic equilibrium on a granular road network. It evaluates welfare and compensation under alternative pricing and revenue-recycling arrangements.",
-      contribution:
-        "The model estimates that the experiment's price schedule could generate welfare gains comparable to adding a lane to every highway and enough revenue to compensate losers. Heterogeneity matters: optimal prices can improve net welfare even when only a small share of toll revenue is counted.",
-      caveat:
-        "The welfare magnitudes are model-based and depend on the road network, behavioral responses, equilibrium assumptions, and feasible revenue recycling. Compensation being available in aggregate does not mean that an implemented policy would actually identify and compensate every loser.",
-      tags: ["Congestion pricing", "Heterogeneity", "Field experiment", "Revenue recycling"]
-    },
-    {
-      title: "Deliver Us from Crime? Gig Jobs, Labor-Market Opportunities, and Offending",
-      authors: "Hugo Allouard, Grazia Cecere, Jose De Sousa, Olivier Marie, and Ines Picard",
-      releaseDate: "October 2026 (exact day not stated by IZA)",
-      publicationStatus: "IZA Discussion Paper 19006",
-      field: "Economics of crime · Platform work",
-      sourceLabel: "IZA",
+      title: "Common Ownership around the World",
+      authors:
+        "Miguel Antón, Florian Ederer, Mireia Giné, Guillermo Ramirez-Chiang, and Kenneth Khoo",
+      releaseDate: "22 October 2026",
+      publicationStatus: "ECGI Finance Working Paper 1161/2026",
+      field: "Corporate ownership · Competition policy",
+      sourceLabel: "ECGI",
       sourceHref:
-        "https://www.iza.org/publications/dp/19006/deliver-us-from-crime-gig-jobs-labor-market-opportunities-and-offending",
+        "https://www.ecgi.global/publications/working-papers/common-ownership-around-the-world",
       researchQuestion:
-        "Does access to low-barrier platform work change legal employment opportunities and criminal offending?",
+        "How prevalent is common ownership across countries, which investors drive it, and how does it relate to legal and market institutions?",
       method:
-        "The authors exploit the staggered rollout of food-delivery platforms across France, combining labor-market outcomes with national criminal records. They also compare offending around the legal minimum age of 18 for delivery work and examine reoffending by whether prior records permit platform work.",
+        "The authors measure common ownership in 49 countries from 2005 to 2023, covering economies responsible for 86% of global GDP. They examine pairwise implied profit weights across firm-size groups and relate the measures to investor protection, competition law, ESG disclosure, and labor-market frictions, with robustness checks for dual-class shares and ownership chains.",
       contribution:
-        "Platform entry increases delivery-worker registrations, reduces unemployment among men and inactivity among male migrants, and is associated with lower vandalism, petty theft, and drug offending. Crime falls just above, but not just below, the eligibility age; reoffending also declines among people whose records allow platform work.",
+        "Common ownership rises markedly across the sample: the median country's average pairwise implied profit weight more than doubles, while the U.S. measure more than triples. Growth is steepest among large firms and is linked to increasing concentration of institutional investment, especially among BlackRock, Vanguard, and State Street.",
       caveat:
-        "The staggered-entry design depends on rollout timing being conditionally unrelated to other local changes. Age and record-based contrasts strengthen the mechanism evidence but do not eliminate every source of selection, and the results may not generalize beyond French platform rules and labor markets.",
-      tags: ["Crime", "Gig work", "Platform entry", "Labor-market opportunity"]
+        "The paper documents ownership patterns and institutional correlations; it does not by itself identify effects on prices, competition, or welfare. Results depend on the construction of implied profit weights, although the authors report robustness beyond a one-share-one-vote assumption.",
+      tags: ["Common ownership", "Institutional investors", "Competition law", "Global markets"]
     },
     {
-      title: "Debiasing Law Enforcement Officers: Evidence from an Expressive Arts Intervention in India",
-      authors: "Sofia Amaral, Girija Borker, Nishith Prakash, and Maria Micaela Sviatschi",
-      releaseDate: "October 2026 (exact day not stated by IZA)",
-      publicationStatus: "IZA Discussion Paper 19005",
-      field: "Law enforcement · Bureaucratic discretion",
-      sourceLabel: "IZA",
-      sourceHref:
-        "https://www.iza.org/publications/dp/19005/debiasing-law-enforcement-officers-evidence-from-an-expressive-arts-intervention-in-india",
+      title: "Upgrading Financial Markets",
+      authors: "Francis Annan and Seth Garz",
+      releaseDate: "October 2026 (exact day not stated by NBER)",
+      publicationStatus: "NBER Working Paper 35912 · DOI 10.3386/w35912",
+      field: "Financial inclusion · Consumer protection",
+      sourceLabel: "NBER",
+      sourceHref: "https://www.nber.org/papers/w35912",
       researchQuestion:
-        "Can a short expressive-arts intervention change incumbent police officers' attitudes and discretionary responses to gender-based violence?",
+        "Is expanded financial infrastructure sufficient to improve market development, or must provider accountability change at the same time?",
       method:
-        "In partnership with the Bihar Police, the researchers run a cluster-randomized trial across 417 police stations and about 2,500 senior officers. They measure attitudes and legal knowledge, conduct victim audits roughly a year later, examine administrative registration delays and citizen reporting, and use officer transfers to study possible diffusion.",
+        "A field experiment across 195 rural communities in Sierra Leone upgrades Village Savings and Loan Associations into mobile-money and bank agents, cross-randomized with a monthly consumer-feedback mechanism. The study tracks operational quality, privacy and consumer protection, usage, revenue, savings digitization, and income.",
       contribution:
-        "Treated officers show more favorable attitudes, empathy, and legal knowledge. Treated stations are 15 percentage points less likely to blame victims in audits, dismiss fewer complaints, provide more referrals, and show a 41% decline in registration delays; longer-run reporting rises, with suggestive evidence of spillovers through transfers.",
+        "Infrastructure upgrades expand access, while feedback raises operational performance by 20.5 percentage points, an 85% improvement, particularly in privacy and consumer protection. Feedback also raises usage and revenue; upgraded associations show greater savings digitization and higher income, consistent with accountability aligning agents' incentives with consumer and principal interests.",
       caveat:
-        "The intervention is institution- and context-specific, and some outcomes rely on audits or administrative records. Transfer-based spillovers are described as suggestive, while multiple outcomes and longer-run reporting changes require care in distinguishing treatment effects from measurement and reporting responses.",
-      tags: ["Police", "Bureaucratic discretion", "Randomized trial", "Gender-based violence"]
+        "The results arise from a specific delegated-intermediation arrangement in rural Sierra Leone. Scaling the feedback mechanism may change monitoring quality or costs, and the public record does not establish that every reported outcome will persist beyond the experimental period.",
+      tags: ["Financial inclusion", "Consumer protection", "Accountability", "Field experiment"]
+    },
+    {
+      title: "Pricing Power in the Mortgage Market: Evidence from GSE Fee Waivers",
+      authors: "Neil Bhutta, Benjamin J. Keys, and Adithya Raajkumar",
+      releaseDate: "October 2026 (exact day not stated by NBER)",
+      publicationStatus: "NBER Working Paper 35907 · DOI 10.3386/w35907",
+      field: "Mortgage regulation · Intermediary incentives",
+      sourceLabel: "NBER",
+      sourceHref: "https://www.nber.org/papers/w35907",
+      researchQuestion:
+        "How much of a targeted mortgage fee waiver reaches eligible borrowers, and can individual loan officers exercise pricing power despite steering restrictions?",
+      method:
+        "The study examines a Fannie Mae and Freddie Mac fee waiver for lower-income first-time homebuyers during 2023–2024. It estimates pass-through to borrowers and compares loan officers using their prior tendency to originate expensive mortgages independently of lender-level pricing.",
+      contribution:
+        "Mortgage intermediaries capture more than 60% of the estimated $1.5 billion in fee waivers rather than passing the full savings to borrowers. Loan officers with a history of expensive originations pass through less than 20%, which the authors interpret as evidence of individual-level pricing power and continued steering incentives.",
+      caveat:
+        "The public abstract does not disclose the full identification strategy or every pricing control. Partial pass-through is not itself proof of unlawful conduct, and the estimates concern a specific waiver, borrower group, and institutional setting.",
+      tags: ["Mortgages", "Fee waivers", "Pass-through", "Sales incentives"]
     }
   ],
   methodsInIssue: [
     {
-      label: "Leximetric institutional measurement",
+      label: "Partial identification in merger analysis",
       description:
-        "The defence-industry paper converts governance documents into comparable control indicators, combining automated extraction with human coding; interpretation depends on both construct validity and source coverage."
+        "The merger paper recovers costs and bounds welfare without committing to one conduct model, trading a strong point prediction for conclusions that remain valid across incentive-compatible mechanisms."
     },
     {
-      label: "Axiomatic characterization",
+      label: "Behavior observed across repeated digital choices",
       description:
-        "The common-ownership paper asks which measure follows from stated mathematical properties, so its conclusion is a conditional theorem rather than an empirical welfare estimate."
+        "The consent study follows users across sites and time, allowing it to distinguish one-off clicks from persistent response patterns while retaining the selection limits of an extension-based panel."
     },
     {
-      label: "Field experiments and equilibrium models",
+      label: "Cross-country ownership measurement",
       description:
-        "The road-pricing study combines observed behavioral responses with a network model, while the police study randomizes an organizational intervention and follows both attitudes and conduct."
+        "The ECGI paper builds comparable common-ownership measures across 49 countries and tests alternative control-right assumptions; its institutional relationships remain descriptive rather than causal."
     },
     {
-      label: "Staggered adoption and institutional thresholds",
+      label: "Randomized accountability and policy pass-through",
       description:
-        "The platform-crime paper triangulates rollout timing with legal-age and criminal-record eligibility contrasts; each comparison addresses a different part of the opportunity-cost mechanism."
+        "The Sierra Leone experiment separates infrastructure from feedback, while the mortgage study examines how an upstream subsidy is divided between intermediaries and intended beneficiaries."
     }
   ],
   watchlist: [
-    "Whether state-influence indices predict procurement, investment, disclosure, or performance after accounting for national security regulation.",
-    "How competing common-ownership measures change empirical estimates used in merger and competition analysis.",
-    "Whether post-IPO improvements in lending terms survive research designs that more fully address selection into public markets.",
-    "Whether low-barrier work opportunities and police-training interventions retain their effects under different platform rules, enforcement institutions, and legal cultures."
+    "Whether conduct-robust cost recovery changes merger-remedy choices in markets beyond beer.",
+    "How privacy law should distinguish formal banner interaction from informed, voluntary, and stable consent.",
+    "Whether global common-ownership measures predict firm conduct after accounting for investor engagement, voting rights, and local competition rules.",
+    "Which monitoring, compensation, and disclosure rules improve pass-through and accountability among financial intermediaries without reducing access."
   ]
 };
 
 export const WEEKLY_REPORT_SCHEDULE = {
   label: "Every Monday · 08:00",
   timezone: "China Standard Time (UTC+8)",
-  nextUpdate: "26 October 2026 · 08:00"
+  nextUpdate: "2 November 2026 · 08:00"
 };

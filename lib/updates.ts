@@ -7,6 +7,19 @@ export type UpdateEntry = {
 
 export const UPDATE_ENTRIES: UpdateEntry[] = [
   {
+    date: "2026-10-26",
+    title: "Research Weekly Issue 013 published",
+    summary:
+      "The weekly research feed now draws from CEPR, ECGI, and NBER to cover merger conduct, digital consent, common ownership, financial accountability, and mortgage pricing.",
+    items: [
+      "Advanced the current report to Issue 013, covering 20–26 October 2026, and scheduled the next update for 2 November at 08:00 China Standard Time.",
+      "Preserved the complete Issue 012 in the Research Weekly archive before replacing the current issue.",
+      "Selected two CEPR papers, one ECGI paper, and two NBER papers; no single source supplies more than two-fifths of the issue.",
+      "Verified exact CEPR and ECGI publication dates and explicitly marked that NBER supplies only an October 2026 issue date on the public paper records.",
+      "Checked IZA, CESifo, journal and publisher pages, author pages, and institutional repositories without lowering relevance or evidence standards to add more items."
+    ]
+  },
+  {
     date: "2026-10-19",
     title: "Research Weekly Issue 012 published",
     summary:
