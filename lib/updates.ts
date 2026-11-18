@@ -7,6 +7,19 @@ export type UpdateEntry = {
 
 export const UPDATE_ENTRIES: UpdateEntry[] = [
   {
+    date: "2026-11-18",
+    title: "Research Weekly Issue 014 published",
+    summary:
+      "The catch-up research feed draws evenly from CEPR, ECGI, and NBER to cover antitrust enforcement, consumer inattention, bank liability, shareholder voting, eminent domain, and police discretion.",
+    items: [
+      "Advanced the current report to Issue 014 and disclosed an extended 27 October–17 November review window because the scheduled 2, 9, and 16 November editions were not published.",
+      "Preserved the complete Issue 013 in the Research Weekly archive before replacing the current issue.",
+      "Selected two papers each from CEPR, ECGI, and NBER, so no single source supplies more than one-third of the issue.",
+      "Verified exact CEPR and ECGI publication dates and explicitly marked that NBER supplies only a November 2026 issue date on the public paper records.",
+      "Checked the wider candidate window and additional IZA, CESifo, journal, publisher, author, and institutional-repository sources without lowering relevance or evidence standards."
+    ]
+  },
+  {
     date: "2026-10-26",
     title: "Research Weekly Issue 013 published",
     summary:
