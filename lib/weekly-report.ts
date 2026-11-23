@@ -29,163 +29,163 @@ export type WeeklyReportIssue = {
 };
 
 export const WEEKLY_REPORT: WeeklyReportIssue = {
-  issue: "Issue 014",
-  publishedAt: "18 November 2026",
-  period: "Extended review window: 27 October–17 November 2026",
+  issue: "Issue 015",
+  publishedAt: "23 November 2026",
+  period: "Review window: 18–23 November 2026",
   headline:
-    "New research on antitrust enforcement, consumer inattention, bank liability, shareholder voting, eminent domain, and police discretion",
+    "New research on adverse selection, procurement evidence, stakeholder governance, CEO incentives, bureaucratic rigidity, and taxpayer behavior",
   editorialNote:
     "Research Weekly tracks newly released law-and-economics scholarship. Each entry identifies the paper's status and source date, then separates its question, method, contribution, and interpretation boundary.",
   coverageNote:
-    "This catch-up issue reviews the full period since Issue 013 and therefore uses an extended 27 October–17 November window; the scheduled 2, 9, and 16 November editions were not published, and the gap is disclosed rather than recast as a standard seven-day issue. The final selection emphasizes six recent papers from three independent research series: two CEPR Discussion Papers, two ECGI Finance Working Papers, and two NBER Working Papers. CEPR and ECGI provide exact publication dates from 13 to 17 November. NBER labels both papers as November 2026 releases and placed them in its current working-paper listings reviewed on 18 November, but the public paper records do not state an exact day; those entries therefore report the month without inventing a date. The candidate search also reviewed earlier records in the extended window and checked IZA, CESifo, journal and publisher pages, author pages, and institutional repositories. Titles, complete author lists, series numbers, DOI information where supplied, dates as supplied, methods, and abstract-level claims were checked against the institutional paper pages. Each source supplies one-third of the issue.",
+    "This issue reviews research released after Issue 014, covering 18–23 November 2026. The final selection contains six papers from three independent research series: two CEPR Discussion Papers, two ECGI Finance Working Papers, and two NBER Working Papers, so each source supplies one-third of the issue. CEPR and ECGI provide exact publication dates from 19 to 23 November. NBER identifies both papers as November 2026 releases and lists them in its current working-paper collection reviewed on 23 November, but its public paper records do not state an exact day; those entries therefore report the month without substituting a retrieval date. The candidate search also reviewed IZA, CESifo, journal and publisher pages, author pages, and institutional repositories. Titles, complete author lists, series numbers, DOI information where supplied, dates as supplied, research designs, and abstract-level claims were checked against the institutional paper pages and, for the NBER entries, the papers' title pages and abstracts.",
   latestResearch: [
     {
-      title: "Antitrust, Market Power, and U.S. Economic Outcomes",
-      authors: "Brian Amorim Cabaco and Morten Ravn",
-      releaseDate: "16 November 2026",
-      publicationStatus: "CEPR Discussion Paper 22186",
-      field: "Antitrust enforcement · Market power",
+      title: "Inference from Outcomes in the Market for Lemons",
+      authors: "Francesc Dilme and Nenad Kos",
+      releaseDate: "23 November 2026",
+      publicationStatus: "CEPR Discussion Paper 22208",
+      field: "Adverse selection · Partial identification",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp22186",
+      sourceHref: "https://cepr.org/publications/dp22208",
       researchQuestion:
-        "How have the composition and intensity of federal antitrust enforcement changed, and what effects do different case types have on firm markups, output, innovation, and allocative efficiency?",
+        "What can an analyst infer about hidden quality, welfare, and deadweight loss from the price and traded quantity observed in a market for lemons?",
       method:
-        "The authors assemble a narrative record of all federal antitrust filings by the U.S. Department of Justice and Federal Trade Commission since the mid-1950s. They use defendants' stock-market reactions to construct sector-level enforcement proxies and relate enforcement changes to markups, sales, inputs, R&D capital, patenting, and resource allocation.",
+        "The paper develops a theoretical partial-identification framework in which a monopsonist posts a price to sellers who privately observe quality. It combines the observed quantity with the price's optimality condition to characterize rationalizable outcomes and sharp bounds on the quality distribution and welfare objects.",
       contribution:
-        "The record documents a shift in the early 1980s from civil non-merger and criminal enforcement toward civil merger cases. Stronger enforcement is associated with lower defendant markups and higher output, R&D capital, patenting, and allocative efficiency; the input response differs across non-merger, criminal, and merger cases.",
+        "The framework derives sharp bounds for producer surplus, consumer surplus, total welfare, and deadweight loss. A pointwise increase in buyer valuation narrows the set of rationalizable outcomes but can widen the producer-surplus range, and the characterizations extend to settings where only price is observed.",
       caveat:
-        "The public abstract does not report every identification assumption or robustness test behind the sector-level proxies. Stock-price reactions can reflect expectations beyond enforcement intensity, and historical associations should not be read as proving that every additional case produces the same welfare effect.",
-      tags: ["Antitrust", "Market power", "Enforcement", "Innovation"]
+        "The results identify sets rather than point estimates and rely on the assumed preferences, market structure, and price-setting optimality. Applying the bounds to a legal or regulatory market would require evidence that the monopsony and information assumptions fit that institution.",
+      tags: ["Adverse selection", "Market for lemons", "Partial identification", "Welfare"]
     },
     {
-      title: "Does Peter Piper Pick Pepper Inattentively? Consumer Inattention to Package Content",
-      authors: "Laura Grigolon, Ian Meeker, and Jakob von Ditfurth",
-      releaseDate: "14 November 2026",
-      publicationStatus: "CEPR Discussion Paper 22181",
-      field: "Consumer protection · Product disclosure",
+      title: "Cost Evidence and Welfare in Optimal Procurement",
+      authors: "Patrick W. Schmitz",
+      releaseDate: "19 November 2026",
+      publicationStatus: "CEPR Discussion Paper 22195",
+      field: "Public procurement · Verifiable evidence",
       sourceLabel: "CEPR",
-      sourceHref: "https://cepr.org/publications/dp22181",
+      sourceHref: "https://cepr.org/publications/dp22195",
       researchQuestion:
-        "Do consumers notice product downsizing, and how do disclosure-based salience and a ban on downsizing compare as consumer-protection responses?",
+        "How does admitting verifiable supplier-cost evidence change a buyer's optimal procurement mechanism, profit, supplier selection, and total surplus?",
       method:
-        "The paper develops a method for recovering inattention within a random-coefficient discrete-choice model and applies it to the pepper category. The empirical setting contains 30 downsizing episodes affecting about one-third of category sales.",
+        "The paper characterizes profit-maximizing mechanisms for a buyer choosing between two ex ante identical suppliers who privately know both their costs and whether they possess evidence that verifies those costs. It compares optimal mechanisms with and without admissible evidence.",
       contribution:
-        "The estimates imply that almost no consumers notice downsizing and that demand responds more strongly to the package price than to net weight. Making downsizing salient produces larger estimated consumer-surplus gains than banning it, because restoring package content raises marginal costs and prices.",
+        "Allowing evidence weakly raises buyer profit but can reduce total surplus even when procurement becomes more frequent. The optimal mechanism favors evidence holders and can select a higher-cost supplier; evidence raises welfare when the procurement benefit is sufficiently small and lowers it when the benefit is sufficiently large.",
       caveat:
-        "The findings come from one product category and depend on the structural demand and inattention model. Consumer-surplus comparisons do not settle separate legal questions about deception, fairness, disclosure comprehension, or distributional effects.",
-      tags: ["Consumer inattention", "Shrinkflation", "Disclosure", "Structural demand"]
+        "This is a theoretical benchmark with two symmetric suppliers and a specified evidence technology. Real procurement systems may include multidimensional quality, collusion, review costs, legal burdens of proof, and heterogeneous bidders that change the welfare comparison.",
+      tags: ["Procurement", "Mechanism design", "Evidence", "Information asymmetry"]
     },
     {
-      title: "Enhanced Liability and Bank Failure",
-      authors:
-        "Felipe Aldunate, Haelim Anderson, Daniel Barth, Dong Beom Choi, Dirk Jenter, Arthur G. Korteweg, and Peter Koudijs",
-      releaseDate: "13 November 2026",
+      title: "The Political Consequences of Stakeholder Governance",
+      authors: "Doron Y. Levit, Markus Parlasca, and Paul Voss",
+      releaseDate: "19 November 2026",
       publicationStatus:
-        "ECGI Finance Working Paper 1169/2026 · DOI 10.67929/ecgi-fin-1169-2026",
-      field: "Bank governance · Shareholder liability",
+        "ECGI Finance Working Paper 1173/2026 · DOI 10.67929/ecgi-fin-1173-2026",
+      field: "Stakeholder governance · Corporate lobbying",
       sourceLabel: "ECGI",
       sourceHref:
-        "https://www.ecgi.global/publications/working-papers/enhanced-liability-and-bank-failure",
+        "https://www.ecgi.global/publications/working-papers/the-political-consequences-of-stakeholder-governance",
       researchQuestion:
-        "Does exposing bank shareholders and managers to losses beyond limited liability reduce bank distress and failure?",
+        "How do lobbying opacity, advocacy-group backlash, and delegated stakeholder governance interact to shape corporate profit, political polarization, and social welfare?",
       method:
-        "The study compares roughly 4,200 similarly sized state-regulated banks in neighboring U.S. states with different liability regimes during the Great Depression. A difference-in-differences analysis adds nationally regulated banks, which faced the same liability rules across states, and tests alternative regulatory, local, and selection explanations.",
+        "The authors develop a political-economy model in which corporate lobbying moves policy toward the firm's preferred outcome while advocacy groups respond. The model compares direct profit-oriented lobbying with delegation to a manager who places greater weight on citizen welfare.",
       contribution:
-        "Limited-liability banks experienced a distress rate 29% higher than banks subject to enhanced liability. The authors interpret the cross-border comparisons and difference-in-differences results as evidence that greater downside exposure can materially reduce bank failure.",
+        "Opaque lobbying can create a ratchet in which lobbying and backlash escalate with little or no policy gain for the firm. Delegating to a stakeholder-oriented manager can buy political quiet when conflict is small, but when firm-society conflict is large the same arrangement can benefit the firm while generating more extreme and socially harmful policies.",
       caveat:
-        "The setting is the Great Depression and historically specific bank-liability regimes. Applying the estimate to modern diversified ownership, deposit insurance, resolution rules, or systemically important banks requires additional institutional analysis.",
-      tags: ["Bank failure", "Limited liability", "Risk taking", "Great Depression"]
+        "The paper establishes a theoretical mechanism, not the average empirical effect of stakeholder governance. Conclusions depend on the modeled information environment, advocacy response, conflict magnitude, and manager preferences, so they do not imply that stakeholder governance is uniformly beneficial or harmful.",
+      tags: ["Stakeholder governance", "Lobbying", "Transparency", "Political economy"]
     },
     {
-      title: "Stock Lending and Pass-Through Voting",
-      authors: "Doron Y. Levit and George Nurisso",
-      releaseDate: "17 November 2026",
+      title: "The CEO Overhang Effect",
+      authors: "Maria Cecilia Bustamante, Jakub Hajda, and Boris Nikolov",
+      releaseDate: "19 November 2026",
       publicationStatus:
-        "ECGI Finance Working Paper 1170/2026 · DOI 10.67929/ecgi-fin-1170-2026",
-      field: "Shareholder voting · Securities lending",
+        "ECGI Finance Working Paper 1172/2026 · DOI 10.67929/ecgi-fin-1172-2026",
+      field: "Executive incentives · Corporate finance",
       sourceLabel: "ECGI",
       sourceHref:
-        "https://www.ecgi.global/publications/working-papers/stock-lending-and-pass-through-voting",
+        "https://www.ecgi.global/publications/working-papers/the-ceo-overhang-effect",
       researchQuestion:
-        "Does allowing fund investors to cast portfolio-company votes directly necessarily align voting outcomes with their preferences when the fund manager still controls share lending?",
+        "Why do investment, leverage, and share repurchases change over a CEO's tenure, and what agency cost arises when current and future CEOs both receive equity?",
       method:
-        "The paper develops a theoretical model in which investors, fund managers, and traders have heterogeneous preferences and can lend shares, trade, and vote. It analyzes how pass-through voting changes the manager's lending decision and the allocation of votes attached to lent shares.",
+        "The paper documents tenure-related corporate-policy patterns and develops a dynamic model of sequential CEOs with finite horizons, base salary, and equity pay. Each CEO chooses investment, financing, and payout, and the model is calibrated to quantify the proposed mechanism.",
       contribution:
-        "Pass-through voting can move outcomes farther from fund investors' preferences because managers may lend more shares once they no longer cast the votes. Traders with different preferences then acquire the voting rights, potentially leaving fund investors worse off even after lending revenue.",
+        "As turnover approaches, a growing share of capital returns and debt costs shifts toward future executives, giving the incumbent incentives to underinvest, increase leverage, and repurchase more shares. The calibration attributes an agency cost equal to about 6% of shareholder value to this CEO-overhang mechanism.",
       caveat:
-        "This is a theoretical mechanism rather than an estimate of average real-world effects. Its practical force depends on lending volumes, recall rules, investor participation, preference differences, and how a particular pass-through system is designed.",
-      tags: ["Pass-through voting", "Stock lending", "Institutional investors", "Governance"]
+        "The 6% figure is model-based rather than a direct experimental estimate, and the public abstract does not detail every dataset, identifying assumption, or calibration target. Other tenure-correlated forces, succession rules, and compensation designs may alter the mechanism's quantitative importance.",
+      tags: ["CEO tenure", "Executive compensation", "Investment", "Capital structure"]
     },
     {
-      title: "Federal Eminent Domain and Interstate Energy Infrastructure: Evidence from History",
-      authors: "Zachary Liscow, Joseph S. Shapiro, and Heidi L. Williams",
+      title: "Bureaucratic Rigidity and Battle Outcomes: Evidence from Military Logistics in the Ming Dynasty",
+      authors: "Jingjing Chen, Jianlei Han, Shing-Yi Wang, and Yongxiang Wang",
       releaseDate: "November 2026 (exact day not stated by NBER)",
-      publicationStatus: "NBER Working Paper 36027 · DOI 10.3386/w36027",
-      field: "Property rights · Energy infrastructure",
+      publicationStatus: "NBER Working Paper 36049 · DOI 10.3386/w36049",
+      field: "State capacity · Public organization",
       sourceLabel: "NBER",
-      sourceHref: "https://www.nber.org/papers/w36027",
+      sourceHref: "https://www.nber.org/papers/w36049",
       researchQuestion:
-        "How did federal eminent-domain authority affect construction of interstate energy-transportation infrastructure?",
+        "Can administrative rules intended to improve accountability reduce state effectiveness by making military logistics less adaptable?",
       method:
-        "Using newly digitized government records and trade-press listings, the authors study the 1947 Natural Gas Act amendment that authorized federally approved interstate gas pipelines to acquire rights of way when bargaining failed. They compare interstate gas-pipeline construction with oil pipelines and intrastate gas pipelines, neither directly affected by the reform.",
+        "The authors study a 1492 Ming reform that replaced merchant grain delivery with a state relay system using prefecture handovers and fixed routes. They combine court records on supply shortages with 406 defensive battles and compare outcomes around formerly merchant-supplied and state-supplied garrisons, including settings where resupply difficulty and procedural costs differed.",
       contribution:
-        "After 1947, annual additions to interstate gas-pipeline mileage rose nearly sixfold while oil-pipeline growth remained stable; the increase was also nearly five times the gain for intrastate gas pipelines. The comparisons support a substantial construction response to federal eminent-domain authority.",
+        "After the reform, formerly merchant-supplied garrisons recorded more shortages relative to state-supplied garrisons, and victory rates fell near the affected garrisons. Declines were largest in longer wars, walled-city defenses, routes crossing more prefectures, and places exposed to floods, droughts, or rugged terrain.",
       caveat:
-        "Historical comparisons may still capture contemporaneous differences across pipeline types, and construction volume does not measure the full welfare balance. Current electricity-transmission projects differ in technology, siting conflicts, environmental review, federalism, and distributional consequences.",
-      tags: ["Eminent domain", "Property rights", "Infrastructure", "Energy"]
+        "The evidence comes from a specific historical military system, and the public abstract does not resolve every concern about garrison placement, conflict selection, or contemporaneous change. Translating the magnitude to modern agencies requires care even if the rigidity mechanism is more general.",
+      tags: ["State capacity", "Bureaucracy", "Public organization", "Historical evidence"]
     },
     {
-      title: "Crime on ICE: Local Police Behavior and Immigration Enforcement in the United States",
-      authors: "John J. Donohue, Tai Markman, and Eric A. Baldwin",
+      title: "Are Republicans and Democrats Different Taxpayers? Evidence From Property Tax Appeals",
+      authors: "Brad C. Nathan, Ricardo Perez-Truglia, and Alejandro Zentner",
       releaseDate: "November 2026 (exact day not stated by NBER)",
-      publicationStatus: "NBER Working Paper 36026 · DOI 10.3386/w36026",
-      field: "Police discretion · Immigration enforcement",
+      publicationStatus: "NBER Working Paper 36055 · DOI 10.3386/w36055",
+      field: "Tax administration · Political economy",
       sourceLabel: "NBER",
-      sourceHref: "https://www.nber.org/papers/w36026",
+      sourceHref: "https://www.nber.org/papers/w36055",
       researchQuestion:
-        "How does delegating federal immigration-enforcement authority to local police departments change arrest priorities and public-safety outcomes?",
+        "Do partisan differences in stated tax preferences translate into different propensities or motives to appeal property-tax assessments?",
       method:
-        "The study uses FBI Uniform Crime Report data from 2000–2024 and staggered adoption of local immigration-enforcement authority across U.S. jurisdictions to estimate effects on arrests and reported offenses.",
+        "The study first surveys beliefs about partisan differences, then links Dallas County administrative property-tax records to voting records. It benchmarks the partisan appeal gap against demographic gaps and uses quasi-experimental and field-experimental evidence to compare the motives underlying appeals.",
       contribution:
-        "Delegated authority increases arrests for low-level discretionary offenses by about 7%, without corresponding reductions in offense rates or serious crime. The authors interpret the pattern as a reallocation of police effort toward discretionary enforcement rather than a measurable public-safety gain.",
+        "Respondents expect Republican homeowners to appeal more often, but the observed partisan gap is only 0.29 percentage points and is small relative to several demographic benchmarks. The quasi-experimental and experimental evidence indicates that Democrats and Republicans appeal for broadly similar reasons.",
       caveat:
-        "Staggered-adoption estimates depend on timing and comparison-group assumptions, and the public abstract does not report every pre-trend or heterogeneity check. Arrest and reported-crime data do not capture all community, reporting, deterrence, or legitimacy effects.",
-      tags: ["Police discretion", "Immigration enforcement", "Arrests", "Public safety"]
+        "Property-tax appeals are a legal and locally specific form of tax avoidance, not a complete measure of compliance or tax attitudes. Dallas County institutions, voter-file linkage, party classification, and appeal access may limit generalization to other taxes and jurisdictions.",
+      tags: ["Tax appeals", "Partisanship", "Administrative data", "Field experiment"]
     }
   ],
   methodsInIssue: [
     {
-      label: "Narrative enforcement records and market reactions",
+      label: "Partial identification from equilibrium restrictions",
       description:
-        "The antitrust paper combines a long-run filing record with stock-price responses to build enforcement exposure; the design expands institutional coverage but requires careful interpretation of what market reactions capture."
+        "The market-for-lemons paper shows how price optimality and traded quantity can bound hidden quality and welfare without pretending that the data point-identify them."
     },
     {
-      label: "Structural recovery of consumer inattention",
+      label: "Mechanism and political-economy theory",
       description:
-        "The downsizing paper embeds attention in a random-coefficient demand model, enabling policy counterfactuals while making the welfare conclusions dependent on structural assumptions."
+        "The procurement and stakeholder-governance papers use formal models to isolate how evidence rules, opacity, backlash, and delegation can reverse intuitive welfare conclusions."
     },
     {
-      label: "Historical borders, comparison groups, and staggered adoption",
+      label: "Dynamic calibration of executive incentives",
       description:
-        "The bank-liability, eminent-domain, and local-policing papers use institutional discontinuities or timing variation; each design gains leverage from legal change but remains bounded by comparability and implementation assumptions."
+        "The CEO-overhang paper links tenure patterns to a sequential-executive model and quantifies the mechanism through calibration; the resulting magnitude remains model-dependent."
     },
     {
-      label: "Governance theory with endogenous share lending",
+      label: "Institutional history and linked administrative records",
       description:
-        "The pass-through-voting model highlights an indirect response: reallocating formal voting authority can change lending behavior and therefore who ultimately holds the vote."
+        "The bureaucracy and taxpayer papers combine institutional detail with historical or modern administrative data, while using comparison groups, experiments, or mechanism checks to distinguish observed patterns from simple description."
     }
   ],
   watchlist: [
-    "Whether renewed antitrust enforcement produces durable productivity and innovation gains across case types and industries.",
-    "Which disclosure formats make package-size changes salient without creating excessive information or compliance costs.",
-    "How modern bank-resolution and deposit-insurance systems would alter the incentive effects of enhanced shareholder or manager liability.",
-    "Whether pass-through voting rules account for securities lending, recalls, participation costs, and preference heterogeneity.",
-    "How eminent-domain authority and delegated police powers should be evaluated when output measures omit distribution, legitimacy, and procedural protections."
+    "Whether partial-identification tools can be operationalized in regulated markets where quality and buyer preferences are only partly observed.",
+    "How procurement law should trade off verifiable cost evidence against selection distortions and evidence-production costs.",
+    "Which lobbying-disclosure and governance arrangements reduce political escalation without allowing delegation to obscure corporate influence.",
+    "Whether compensation and succession design can mitigate CEO-overhang incentives without inducing new short-termism or retention costs.",
+    "How procedural accountability can preserve flexibility in public organizations, and whether modern administrative data reproduce the historical rigidity mechanism.",
+    "Whether the small partisan gap in property-tax appeals generalizes across jurisdictions, tax types, and more legally consequential compliance decisions."
   ]
 };
 
 export const WEEKLY_REPORT_SCHEDULE = {
   label: "Every Monday · 08:00",
   timezone: "China Standard Time (UTC+8)",
-  nextUpdate: "23 November 2026 · 08:00"
+  nextUpdate: "30 November 2026 · 08:00"
 };

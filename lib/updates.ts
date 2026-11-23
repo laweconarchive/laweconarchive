@@ -7,6 +7,19 @@ export type UpdateEntry = {
 
 export const UPDATE_ENTRIES: UpdateEntry[] = [
   {
+    date: "2026-11-23",
+    title: "Research Weekly Issue 015 published",
+    summary:
+      "The weekly research feed draws evenly from CEPR, ECGI, and NBER to cover adverse selection, procurement evidence, stakeholder governance, CEO incentives, bureaucratic rigidity, and taxpayer behavior.",
+    items: [
+      "Advanced the current report to Issue 015, covering 18–23 November 2026, and scheduled the next update for 30 November at 08:00 China Standard Time.",
+      "Preserved the complete Issue 014 in the Research Weekly archive before replacing the current issue.",
+      "Selected two papers each from CEPR, ECGI, and NBER, so no single source supplies more than one-third of the issue.",
+      "Verified exact CEPR and ECGI publication dates and explicitly marked that NBER provides only a November 2026 date on the public paper records.",
+      "Checked titles, author lists, series and DOI information, research designs, findings, and limitations against institutional pages and the NBER papers' title pages and abstracts."
+    ]
+  },
+  {
     date: "2026-11-18",
     title: "Research Weekly Issue 014 published",
     summary:

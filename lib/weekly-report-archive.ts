@@ -12,6 +12,7 @@ import { WEEKLY_REPORT as ISSUE_010 } from "@/lib/weekly-reports/issue-010";
 import { WEEKLY_REPORT as ISSUE_011 } from "@/lib/weekly-reports/issue-011";
 import { WEEKLY_REPORT as ISSUE_012 } from "@/lib/weekly-reports/issue-012";
 import { WEEKLY_REPORT as ISSUE_013 } from "@/lib/weekly-reports/issue-013";
+import { WEEKLY_REPORT as ISSUE_014 } from "@/lib/weekly-reports/issue-014";
 
 export type WeeklyReportArchiveEntry = {
   slug: string;
@@ -20,7 +21,8 @@ export type WeeklyReportArchiveEntry = {
 };
 
 export const WEEKLY_REPORT_ARCHIVE: WeeklyReportArchiveEntry[] = [
-  { slug: "issue-014", report: WEEKLY_REPORT, current: true },
+  { slug: "issue-015", report: WEEKLY_REPORT, current: true },
+  { slug: "issue-014", report: ISSUE_014, current: false },
   { slug: "issue-013", report: ISSUE_013, current: false },
   { slug: "issue-012", report: ISSUE_012, current: false },
   { slug: "issue-011", report: ISSUE_011, current: false },
